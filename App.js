@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity, TextInput } from 'react-native';
 
 export default function App() {
+  const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const recipes = [
@@ -78,14 +79,31 @@ export default function App() {
     }
   ];
 
-  const filteredRecipes = selectedCategory === 'All' ? recipes : recipes.filter(recipe => recipe.course === selectedCategory);
+  const filteredRecipes = recipes.filter(recipe => {
+    // Filtrer par catégorie
+    if (selectedCategory !== 'All' && recipe.course !== selectedCategory) {
+      return false;
+    }
+
+    // Filtrer par titre
+    return recipe.title.toLowerCase().includes(searchTerm.toLowerCase());
+  });
 
   return (
-  <>
+    <View style={styles.maincontainer}>
+  <View style={styles.container}>
     <View>
         <Text>Hello There</Text>
         <Text>Make your own food, stay at Home</Text>
     </View>
+    <View style={styles.searchBar}>
+            <TextInput
+              style={styles.searchInput}
+              placeholder="Search by Title"
+              value={searchTerm}
+              onChangeText={text => setSearchTerm(text)}
+            />
+          </View>
       <View style={styles.categoryBar}>
         <TouchableOpacity
           style={[styles.categoryButton, selectedCategory === 'All' && styles.selectedCategory]}
@@ -118,12 +136,13 @@ export default function App() {
           <Text>Veggie</Text>
         </TouchableOpacity>
       </View>
-    <ScrollView contentContainerStyle={styles.container}>
+    <ScrollView>
       {filteredRecipes.map((recipe, index) => (
         <RecipeCard key={index} {...recipe} />
       ))}
     </ScrollView>
-    </>
+    </View>
+    </View>
   );
 }
 
@@ -143,12 +162,36 @@ const RecipeCard = ({ title, description, course, preparationTime, kcal, ingredi
 );
 
 const styles = StyleSheet.create({
-  container: {
+  maincontainer: {
     flexGrow: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    backgroundColor: '#F5F5F5',
+    paddingVertical: 40,
+  },
+  container: {
     justifyContent: 'center',
-    padding: 20,
+    width: "90%",
+    alignSelf: 'center',
+    marginBottom: "10%",
+
+  },
+  searchBar: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 10,
+  },
+  searchInput: {
+    flex: 1,
+    marginRight: 10,
+    padding: 10,
+    borderRadius: 5,
+    borderWidth: 1,
+    borderColor: '#ccc',
+  },
+  searchButton: {
+    padding: 10,
+    borderRadius: 5,
+    borderWidth: 1,
+    borderColor: '#ccc',
   },
   categoryBar: {
     flexDirection: 'row',
