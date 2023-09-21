@@ -5,7 +5,7 @@ import { colors } from '../colors';
 
 const RecipeList = ({ recipes, likedRecipes, onToggleLike }) => {
   const isLiked = (recipe) => likedRecipes.includes(recipe);
-  const recipesPerPage = 2;
+  const recipesPerPage = 3;
   const totalPages = Math.ceil(recipes.length / recipesPerPage);
   const [currentPage, setCurrentPage] = useState(1);
 

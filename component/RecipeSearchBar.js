@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingVertical: 10,
     color: colors.lightText,
-
   },
 });
 

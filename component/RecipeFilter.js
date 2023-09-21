@@ -1,4 +1,3 @@
-// CategoryList.js
 import React from 'react';
 import { ScrollView, TouchableOpacity, Image, Text, StyleSheet } from 'react-native';
 import { colors } from '../colors';

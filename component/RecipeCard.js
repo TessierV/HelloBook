@@ -1,25 +1,63 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet, Modal, ScrollView } from 'react-native';
 import { colors } from '../colors';
+import RecipeModal from './RecipeModal';
 
 const RecipeCard = ({ recipe }) => {
   const [isLiked, setIsLiked] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleLike = () => {
     setIsLiked((prevIsLiked) => !prevIsLiked);
   };
 
   return (
-    <View style={styles.recipeCard}>
-      <Text style={styles.recipeTitle}>{recipe.title}</Text>
-      <Text style={styles.recipeDescription}>{recipe.description}</Text>
-      <Text>Course: {recipe.course}</Text>
-      <Text>Preparation Time: {recipe.preparationTime}</Text>
-      <Text>Kcal: {recipe.kcal}</Text>
-      <TouchableOpacity onPress={toggleLike}>
-        <Text>{isLiked ? 'Liked' : 'Like'}</Text>
+    <>
+      <TouchableOpacity style={styles.recipeCard} onPress={() => setIsModalOpen(true)}>
+        <View style={styles.left_recipeCard}>
+          <Image source={require('../img/Risotto.png')} style={styles.recipeImage} />
+        </View>
+
+        <View style={styles.center_recipeCard}>
+          <Text style={styles.recipeTitle}>{recipe.title}</Text>
+          <Text style={styles.recipeSubtitle}>{recipe.subtitle}</Text>
+          <View style={styles.recipeCardDetails}>
+            <View style={styles.recipeCardDetails_column}>
+              <Image source={require('../img/hourglass.png')} style={styles.recipeIcons} />
+              <Text style={styles.recipeText}>Cook: {recipe.preparationTime}</Text>
+            </View>
+            <View style={styles.recipeCardDetails_column}>
+              <Image source={require('../img/bolt.png')} style={styles.recipeIcons} />
+              <Text style={styles.recipeText}>Kcal: {recipe.kcal}</Text>
+            </View>
+          </View>
+        </View>
+        <View style={styles.right_recipeCard}>
+          <TouchableOpacity onPress={toggleLike}>
+            <Image
+              source={isLiked ? require('../img/heart_icon_full.png') : require('../img/heart_icon.png')}
+              style={styles.recipeIcons_heart}
+            />
+            <Text>{isLiked ? 'Liked' : 'Like'}</Text>
+          </TouchableOpacity>
+        </View>
+        <Image source={require('../img/new.png')} style={styles.recipeIcons_new} />
       </TouchableOpacity>
-    </View>
+
+      <RecipeModal
+  isOpen={isModalOpen}
+  onClose={() => setIsModalOpen(false)}
+  steps={recipe.steps}
+  recipeName={recipe.title}
+  subtitle = {recipe.subtitle}
+  description={recipe.description}
+  ingredients={recipe.ingredients}
+  allergy={recipe.allergy}
+  course={recipe.course}
+  difficulty={recipe.difficulty}
+
+/>
+    </>
   );
 };
 
@@ -27,19 +65,68 @@ const styles = StyleSheet.create({
   recipeCard: {
     backgroundColor: colors.lightBackground,
     borderRadius: 10,
-    padding: 20,
     marginBottom: '3%',
+    flex: 1,
+    flexDirection: 'row',
+    paddingVertical: '3%',
+  },
+  left_recipeCard: {
+    flex: 3,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  center_recipeCard: {
+    flex: 5.5,
+    justifyContent: 'center',
+  },
+  right_recipeCard: {
+    flex: 1.5,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   recipeTitle: {
-    fontSize: 18,
+    fontSize: 14,
     fontWeight: 'bold',
     color: colors.darkText,
   },
-  recipeDescription: {
-    fontSize: 14,
+  recipeSubtitle: {
+    fontSize: 10,
     color: colors.darkText,
-    marginBottom: 20,
-
+    marginBottom: '6%',
+  },
+  recipeText: {
+    fontSize: 12,
+  },
+  recipeImage: {
+    width: 80,
+    height: 80,
+  },
+  recipeCardDetails: {
+    marginBottom: '3%',
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  recipeCardDetails_column: {
+    flexDirection: 'row',
+  },
+  recipeIcons: {
+    width: 10,
+    height: 10,
+    alignSelf: 'center',
+    marginRight: '2%',
+  },
+  recipeIcons_new: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    width: 25,
+    height: 25,
+  },
+  recipeIcons_heart: {
+    width: 20,
+    height: 20,
   },
 });
 
