@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import RecipeCard from './RecipeCard';
 import { colors } from '../colors';
 
@@ -35,7 +35,7 @@ const RecipeList = ({ recipes, likedRecipes, onToggleLike }) => {
   const recipesToDisplay = recipes.slice(startIndex, endIndex);
 
   return (
-    <ScrollView>
+    <View>
       {recipesToDisplay.map((recipe, index) => (
         <RecipeCard
           key={index}
@@ -47,7 +47,7 @@ const RecipeList = ({ recipes, likedRecipes, onToggleLike }) => {
       <View style={styles.paginationContainer}>
         {renderPaginationButtons()}
       </View>
-    </ScrollView>
+    </View>
   );
 };
 
