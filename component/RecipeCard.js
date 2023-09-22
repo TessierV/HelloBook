@@ -15,7 +15,7 @@ const RecipeCard = ({ recipe }) => {
     <>
       <TouchableOpacity style={styles.recipeCard} onPress={() => setIsModalOpen(true)}>
         <View style={styles.left_recipeCard}>
-          <Image source={require('../img/Risotto.png')} style={styles.recipeImage} />
+        <Image source={recipe.image_round} style={styles.recipeImage} />
         </View>
 
         <View style={styles.center_recipeCard}>
@@ -38,7 +38,6 @@ const RecipeCard = ({ recipe }) => {
               source={isLiked ? require('../img/heart_icon_full.png') : require('../img/heart_icon.png')}
               style={styles.recipeIcons_heart}
             />
-            <Text>{isLiked ? 'Liked' : 'Like'}</Text>
           </TouchableOpacity>
         </View>
         <Image source={require('../img/new.png')} style={styles.recipeIcons_new} />
@@ -55,6 +54,7 @@ const RecipeCard = ({ recipe }) => {
   allergy={recipe.allergy}
   course={recipe.course}
   difficulty={recipe.difficulty}
+  image={recipe.image}
 
 />
     </>
