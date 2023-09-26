@@ -137,8 +137,6 @@ const RecipeModal = ({ isOpen, onClose, steps, image, recipeName, course, diffic
                     </TouchableOpacity>
                     <ScrollView >
                         <View style={styles.modalContent_text}>
-                            <Text style={styles.modalDescription}>Difficulté: {difficulty}</Text>
-
                             <Text style={styles.sectionTitle}>Description:</Text>
                             <View style={styles.ingredientsDivider}></View>
 
@@ -197,7 +195,8 @@ const styles = StyleSheet.create({
         height: '90%',
     },
     modalContent_text: {
-        padding: 20,
+        width: '90%',
+        alignSelf: 'center',
         marginBottom: 100,
     },
     modalHeader: {
