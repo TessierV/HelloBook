@@ -1,21 +1,18 @@
 import React, { useState } from 'react';
-import { View, Text, Image, TouchableOpacity, StyleSheet, Modal, ScrollView } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet, Modal, ScrollView, Dimensions } from 'react-native'; // Import Dimensions
 import { colors } from '../colors';
 import RecipeModal from './RecipeModal';
 
 const RecipeCard = ({ recipe }) => {
-  const [isLiked, setIsLiked] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const toggleLike = () => {
-    setIsLiked((prevIsLiked) => !prevIsLiked);
-  };
+  const screenWidth = Dimensions.get('window').width;
+  const cardWidth = (screenWidth * 90) / 100;
 
   return (
     <>
-      <TouchableOpacity style={styles.recipeCard} onPress={() => setIsModalOpen(true)}>
+      <TouchableOpacity style={[styles.recipeCard, { width: cardWidth }]} onPress={() => setIsModalOpen(true)}>
         <View style={styles.left_recipeCard}>
-        <Image source={recipe.image_round} style={styles.recipeImage} />
+          <Image source={recipe.image_round} style={styles.recipeImage} />
         </View>
 
         <View style={styles.center_recipeCard}>
@@ -33,30 +30,29 @@ const RecipeCard = ({ recipe }) => {
           </View>
         </View>
         <View style={styles.right_recipeCard}>
-          <TouchableOpacity onPress={toggleLike}>
-            <Image
+          <TouchableOpacity>
+            {/*<Image
               source={isLiked ? require('../img/heart_icon_full.png') : require('../img/heart_icon.png')}
               style={styles.recipeIcons_heart}
-            />
+            />*/}
           </TouchableOpacity>
         </View>
-        <Image source={require('../img/new.png')} style={styles.recipeIcons_new} />
+        {/*<Image source={require('../img/new.png')} style={styles.recipeIcons_new} />*/}
       </TouchableOpacity>
 
       <RecipeModal
-  isOpen={isModalOpen}
-  onClose={() => setIsModalOpen(false)}
-  steps={recipe.steps}
-  recipeName={recipe.title}
-  subtitle = {recipe.subtitle}
-  description={recipe.description}
-  ingredients={recipe.ingredients}
-  allergy={recipe.allergy}
-  course={recipe.course}
-  difficulty={recipe.difficulty}
-  image={recipe.image}
-
-/>
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        steps={recipe.steps}
+        recipeName={recipe.title}
+        subtitle={recipe.subtitle}
+        description={recipe.description}
+        ingredients={recipe.ingredients}
+        allergy={recipe.allergy}
+        course={recipe.course}
+        difficulty={recipe.difficulty}
+        image={recipe.image}
+      />
     </>
   );
 };
@@ -90,16 +86,17 @@ const styles = StyleSheet.create({
     color: colors.darkText,
   },
   recipeSubtitle: {
-    fontSize: 10,
+    fontSize: 11,
     color: colors.darkText,
     marginBottom: '6%',
   },
   recipeText: {
-    fontSize: 12,
+    fontSize: 11,
   },
   recipeImage: {
     width: 80,
     height: 80,
+    borderRadius: 10,
   },
   recipeCardDetails: {
     marginBottom: '3%',

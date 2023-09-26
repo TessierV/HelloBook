@@ -4,16 +4,16 @@ import { colors } from '../colors';
 
 const viewsData = [
   {
-    imageSource: require('../img/health.png'),
-    text: 'Discover new Recipes',
+    imageSource: require('../img/prepare.png'),
+    text: 'Préparez vos plats maison avec facilité.',
   },
   {
     imageSource: require('../img/prepare.png'),
-    text: 'Make your own food at Home',
+    text: 'Savourez des repas délicieux et sains.',
   },
   {
-    imageSource: require('../img/eating.png'),
-    text: 'Enjoy delicious meals',
+    imageSource: require('../img/prepare.png'),
+    text: 'Découvrez de nouveau plats.',
   },
 ];
 
@@ -35,14 +35,14 @@ const RecipeHeader = () => {
   return (
     <View style={styles.container}>
       <View style={styles.leftColumn}>
-        <Text style={styles.homeTitle}>Hello There</Text>
+        <Text style={styles.homeTitle}>Bienvenue !</Text>
         <Text style={styles.homeSubtitle}>
           {currentData.text.split(' ').map((word, index) => (
             <Text
               key={index}
               style={[
                 styles.homeText,
-                word === 'Home' || word === 'Discover' || word === 'Enjoy'
+                word === 'nouveau' || word === 'facilité.' || word === 'délicieux'
                   ? { color: colors.primaryColors }
                   : null,
               ]}

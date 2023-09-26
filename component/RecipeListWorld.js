@@ -3,8 +3,8 @@ import { View, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
 import RecipeCard from './RecipeCard';
 import { colors } from '../colors';
 
-const RecipeList = ({ recipes }) => {
-  const recipesPerPage = 3;
+const RecipeListWorld = ({ recipes }) => {
+  const recipesPerPage = 2;
   const totalPages = Math.ceil(recipes.length / recipesPerPage);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -109,4 +109,4 @@ noteText: {
 },
 });
 
-export default RecipeList;
+export default RecipeListWorld;

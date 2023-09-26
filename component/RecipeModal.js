@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Modal, View, Text, Image, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 import { colors } from '../colors';
+import StepsModal from './StepsModal';
+import { ingredientImages } from '../constant/ingredientImages';
 
 const RecipeModal = ({ isOpen, onClose, steps, image, recipeName, course, difficulty, description, subtitle, allergy, ingredients }) => {
     const [showStepsModal, setShowStepsModal] = useState(false);
@@ -16,50 +18,47 @@ const RecipeModal = ({ isOpen, onClose, steps, image, recipeName, course, diffic
 
     const getCourseBackgroundColor = (course) => {
         switch (course) {
-            case 'Calorie Smart':
+            case 'Sain':
                 return '#CBE895';
+            case '<30min':
+                return '#B9E6F7';
             case 'Pasta':
                 return '#EAE1B0';
-            case 'World':
+            case 'Monde':
                 return '#FFCC99';
             case 'Veggie':
                 return '#A6D7A8';
-            case 'Fish':
+            case 'Poisson':
                 return '#BFDFFF';
-            case 'Meat':
+            case 'Viande':
                 return '#D77B89';
             case 'Dessert':
                 return '#E1C4FF';
+            case 'Am.latine':
+                return '#BFDFFF';
+            case 'Asie':
+                return '#D77B89';
+            case 'Thailande':
+                return '#E1C4FF';
+            case 'Corée':
+                return '#BFDFFF';
+            case 'Chine':
+                return '#BFDFFF';
+            case 'Japon':
+                return '#D77B89';
+            case 'France':
+                return '#E1C4FF';
+            case 'Italie':
+                return '#D77B89';
+            case 'Orient':
+                return '#E1C4FF';
+            case 'Africain':
+                return '#D77B89';
             default:
                 return '#E9EBF4';
         }
     };
 
-    const ingredientImages = {
-        Oignon: require('../img/recipe/onion.png'),
-        Carotte: require('../img/recipe/carrot.png'),
-        "Gousse d'ail": require('../img/recipe/garlic.png'),
-        "Saucisse de Toulouse": require('../img/recipe/sausage.png'),
-        "Fenouil": require('../img/recipe/leek.png'),
-        "g Riz pour risotto": require('../img/recipe/rice-bowl.png'),
-        "g Riz": require('../img/recipe/rice-bowl.png'),
-        "g Graines de sésame": require("../img/recipe/sesame.png"),
-        "g Mascarpone": require('../img/recipe/sour-cream.png'),
-        "g Tomme râpée": require('../img/recipe/cheese.png'),
-        "Fenouil moulu": require('../img/recipe/green_spice.png'),
-        Sel: require('../img/recipe/white_spice.png'),
-        Poivre: require('../img/recipe/black_spice.png'),
-        Poivre: require('../img/recipe/black_spice.png'),
-        Huile:  require('../img/recipe/oil.png'),
-        "½ Gingembre":  require('../img/recipe/ginger.png'),
-        "Pak choï": require('../img/recipe/pak-choi.png'),
-        "Filet de poulet":  require('../img/recipe/chicken-breast.png'),
-
-        "ml Huile de sésame":  require('../img/recipe/oil.png'),
-        "Sauce asiatique sucrée": require('../img/recipe/shoyu.png'),
-
-
-    };
 
     const renderIngredientItem = (ingredient, index) => {
         const ingredientName = ingredient.replace(/^\d+\s*/, '');
@@ -104,7 +103,8 @@ const RecipeModal = ({ isOpen, onClose, steps, image, recipeName, course, diffic
             <Text
                 style={{
                     backgroundColor: getCourseBackgroundColor(courseItem),
-                    padding: 5,
+                    paddingVertical: 5,
+                    paddingHorizontal: 10,
                     marginTop: 20,
                     marginRight: 5,
                     borderRadius: 5,
@@ -135,7 +135,7 @@ const RecipeModal = ({ isOpen, onClose, steps, image, recipeName, course, diffic
                         <Image source={require('../img/cross-small.png')} style={styles.closeButtonImage} />
 
                     </TouchableOpacity>
-                    <ScrollView>
+                    <ScrollView >
                         <View style={styles.modalContent_text}>
                             <Text style={styles.modalDescription}>Difficulté: {difficulty}</Text>
 
@@ -169,51 +169,14 @@ const RecipeModal = ({ isOpen, onClose, steps, image, recipeName, course, diffic
                     </ScrollView>
                 </View>
             </View>
-
-            {/* Deuxième modal pour les étapes */}
-            <Modal animationType="slide" transparent={true} visible={showStepsModal}>
-                <View style={styles.stepsModalContainer}>
-                    <View style={styles.stepsModalContent}>
-                        <Text style={styles.stepsModalTitle}>Recipe Steps</Text>
-
-                        <ScrollView>
-                            <View key={currentStepIndex} style={styles.stepContainer}>
-                                <Image source={steps[currentStepIndex].image} style={styles.stepImage} />
-                                <Text style={styles.stepText}>{`${currentStepIndex + 1}. ${steps[currentStepIndex].text}`}</Text>
-                            </View>
-                        </ScrollView>
-
-                        <View style={styles.stepsModalButtons}>
-                            <TouchableOpacity
-                                onPress={showPreviousStep}
-                                disabled={currentStepIndex === 0}
-                                style={{
-                                    opacity: currentStepIndex === 0 ? 0.5 : 1,
-                                }}
-                            >
-                                <Image source={require('../img/angle-small-left.png')} style={styles.closeButtonIcons} />
-                                <Text style={styles.stepsButton}>Précédent</Text>
-                            </TouchableOpacity>
-
-                            <TouchableOpacity onPress={closeStepsModal}>
-                                <Image source={require('../img/cross-circle.png')} style={styles.closeButtonIcons} />
-
-                                <Text style={styles.stepsButton}>Fermer</Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity
-                                onPress={showNextStep}
-                                disabled={currentStepIndex === steps.length - 1}
-                                style={{
-                                    opacity: currentStepIndex === steps.length - 1 ? 0.5 : 1,
-                                }}
-                            >
-                                <Image source={require('../img/angle-small-right.png')} style={styles.closeButtonIcons} />
-                                <Text style={styles.stepsButton}>Suivant</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View>
-                </View>
-            </Modal>
+            <StepsModal
+                isOpen={showStepsModal}
+                onClose={closeStepsModal}
+                steps={steps}
+                currentStepIndex={currentStepIndex}
+                showPreviousStep={showPreviousStep}
+                showNextStep={showNextStep}
+                />
         </Modal>
     );
 };
@@ -248,6 +211,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: 'bold',
         color: colors.lightText,
+
     },
     modalSubtitle: {
         fontSize: 11,
@@ -256,13 +220,14 @@ const styles = StyleSheet.create({
         marginBottom: '6%',
         paddingVertical: 4,
         borderRadius: 5,
+
     },
     courseContainer: {
         flexDirection: 'row',
     },
     modalDescription: {
         fontSize: 11,
-        color: 'gray',
+        color: colors.greyText,
         marginVertical: 10,
         width: '100%',
     },
@@ -271,6 +236,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginVertical: 10,
         marginTop: '10%',
+
     },
 
     ingredientRow: {
@@ -282,7 +248,6 @@ const styles = StyleSheet.create({
         fontSize: 9,
         width: 85,
         marginBottom: 15,
-
     },
     stepText: {
         fontSize: 11,
@@ -342,7 +307,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
     },
     startButtonText: {
-        color: 'white',
+        color: colors.lightBackground,
         fontSize: 16,
     },
     ingredientImage: {

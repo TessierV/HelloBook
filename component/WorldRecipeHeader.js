@@ -4,12 +4,16 @@ import { colors } from '../colors';
 
 const viewsData = [
   {
-    //imageSource: require('../img/prepare.png'),
-    text: 'Quelle catégorie recherchez-vous ?',
+    imageSource: require('../img/eating.png'),
+    text: 'Explorez les cuisines du monde depuis chez vous',
+  },
+  {
+    imageSource: require('../img/eating.png'),
+    text: 'Voyagez à travers les saveurs du monde.',
   },
 ];
 
-const RecipeWorldHeader = () => {
+const WorldRecipeHeader = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -27,21 +31,26 @@ const RecipeWorldHeader = () => {
   return (
     <View style={styles.container}>
       <View style={styles.leftColumn}>
-        <Text style={styles.homeSubtitle}>
+      <Text style={styles.homeSubtitle}>Cuisine du Monde</Text>
+        <Text style={styles.homeTitle}>
+
           {currentData.text.split(' ').map((word, index) => (
+
             <Text
               key={index}
               style={[
                 styles.homeText,
-                word === 'catégorie'
-                  ? { color: colors.primaryColors }
+                word === 'saveurs' || word === 'Explorez'
+                  ? { color: colors.primaryColors, fontWeight: "bold", }
                   : null,
               ]}
             >
               {word}{' '}
             </Text>
           ))}
+
         </Text>
+
       </View>
       <View style={styles.rightColumn}>
         <Image
@@ -57,23 +66,24 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
-    height: 130,
-    marginTop: '5%',
+    height: 150,
+    justifyContent: 'center',
+    marginBottom: '5%',
   },
   leftColumn: {
-    flex: 8,
+    flex: 7,
     paddingRight: 10,
+
   },
   rightColumn: {
-    flex: 2,
+    flex: 3,
   },
   image: {
     width: '100%',
     height: '100%',
   },
   homeTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
+    fontSize: 14,
     color: colors.darkText,
   },
   homeSubtitle: {
@@ -81,9 +91,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 28,
   },
-  homeText: {
-    fontWeight: 'bold',
-  },
 });
 
-export default RecipeWorldHeader;
+export default WorldRecipeHeader;

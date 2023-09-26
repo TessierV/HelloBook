@@ -2,7 +2,7 @@ import React from 'react';
 import { ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import { colors } from '../colors';
 
-const CategoryList = ({ categories, selectedCategory, renderCategoryButton }) => {
+const CategoryList_World = ({ categories, selectedCategory, renderCategoryButton }) => {
   return (
     <ScrollView
       horizontal={true}
@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   categoryButton: {
-    marginVertical: 10,
+    marginBottom: 10,
+    paddingHorizontal: 10,
     alignItems: 'center',
     width: 70,
   },
@@ -42,4 +43,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CategoryList;
+export default CategoryList_World;
