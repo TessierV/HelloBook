@@ -17,7 +17,8 @@ const RecipeCard = ({ recipe }) => {
 
         <View style={styles.center_recipeCard}>
           <Text style={styles.recipeTitle}>{recipe.title}</Text>
-          <Text style={styles.recipeSubtitle}>{recipe.subtitle}</Text>
+          {/*<Text style={styles.recipeSubtitle}>Niveau: {recipe.subtitle}</Text>*/}
+          <Text style={styles.recipeSubtitle}>Difficulté: {recipe.difficulty}</Text>
           <View style={styles.recipeCardDetails}>
             <View style={styles.recipeCardDetails_column}>
               <Image source={require('../img/hourglass.png')} style={styles.recipeIcons} />
