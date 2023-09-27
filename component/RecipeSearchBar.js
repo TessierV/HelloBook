@@ -9,7 +9,7 @@ const SearchBar = ({ value, onChangeText }) => {
       <TextInput
         style={styles.searchInput}
         placeholderTextColor= {colors.lightText}
-        placeholder="Search by Title"
+        placeholder="Recherche par recette"
         value={value}
         onChangeText={onChangeText}
       />

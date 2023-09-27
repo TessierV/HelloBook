@@ -90,6 +90,7 @@ const BrunchRecipeContainer = ({ recipes, likedRecipes, onToggleLike }) => {
     {isDessertListVisible && (
       <>
       <Text style={styles.noteTitle}>Présentation</Text>
+      <View style={styles.ingredientsDivider}></View>
       <View style={styles.noteContainer}>
             <Text style={styles.noteText}>"Bienvenue dans notre univers de brunch, où sucré et salé se rencontrent pour éveiller vos papilles."</Text>
       </View>
@@ -162,7 +163,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 14,
-    color: 'white',
+    color: colors.lightText,
   },
   noteTitle:{
     color: colors.darkText,
@@ -181,6 +182,13 @@ const styles = StyleSheet.create({
 noteText: {
     fontSize: 11,
     color: colors.greyText,
+    marginBottom: 20,
+
+},
+ingredientsDivider: {
+  borderBottomWidth: 1,
+  borderBottomColor: colors.lightBackground,
+  marginVertical: 5,
 },
 });
 

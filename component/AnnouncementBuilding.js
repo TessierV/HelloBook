@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
   modalContent: {
-    backgroundColor: 'white',
+    backgroundColor: colors.mainBackground,
     width: '80%',
     height: '50%',
     borderRadius: 10,
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     paddingVertical: '3%',
     borderRadius: 10,
     width: '80%',
-    backgroundColor: "#D35C3A",
+    backgroundColor: colors.secondColors,
   },
   ButtonText:{
     fontWeight: 'bold',

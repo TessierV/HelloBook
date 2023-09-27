@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity, Image, ScrollView } from 'react-native';
 import RecipeCard from './RecipeCard';
 import { colors } from '../colors';
 
@@ -51,17 +51,18 @@ const RecipeList = ({ recipes }) => {
           onToggleLike={() => onToggleLike(index)}
         />
       ))}
-      <View style={styles.paginationContainer}>
+      <ScrollView
+        horizontal={true} style={styles.paginationContainer}>
         {renderPaginationButtons()}
-      </View>
+      </ScrollView>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   paginationContainer: {
-    flexDirection: 'row',
-    justifyContent: 'center',
+    alignSelf: 'center',
+    paddingVertical: 10,
   },
   paginationButton: {
     width: 25,

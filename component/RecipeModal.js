@@ -38,7 +38,7 @@ const RecipeModal = ({ isOpen, onClose, steps, image, recipeName, course, diffic
                 return '#BFDFFF';
             case 'Asie':
                 return '#D77B89';
-            case 'Thailande':
+            case 'Thaïlande':
                 return '#E1C4FF';
             case 'Corée':
                 return '#BFDFFF';
@@ -273,7 +273,7 @@ const styles = StyleSheet.create({
         height: '100%',
     },
     closeButtonText: {
-        color: 'white',
+        color: colors.lightText,
         fontSize: 14,
     },
     imageContainer: {
@@ -341,7 +341,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
     },
     startButtonText: {
-        color: 'white',
+        color: colors.lightText,
         fontSize: 14,
     },
     // Styles pour le deuxième modal des étapes

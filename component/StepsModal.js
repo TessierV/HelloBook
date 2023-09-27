@@ -49,7 +49,7 @@ const StepsModal = ({ isOpen, onClose, steps, currentStepIndex, showPreviousStep
               <TouchableOpacity onPress={() => handleSubstepToggle(substepIndex)}>
                 <Image source={stepChecklist[stepIndex][substepIndex] ? require('../img/checkbox.png') : require('../img/box.png')} style={styles.checkboxImage} />
               </TouchableOpacity>
-              <Text style={[styles.stepText, { color: stepChecklist[stepIndex][substepIndex] ? colors.greyText : 'black' }]}>
+              <Text style={[styles.stepText, { color: stepChecklist[stepIndex][substepIndex] ? colors.greyText : colors.darkText }]}>
 
               {substep}</Text>
             </View>

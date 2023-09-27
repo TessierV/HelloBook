@@ -38,9 +38,7 @@ const NewRecipeContainer = ({ recipes, likedRecipes, onToggleLike }) => {
   return (
     <>
     <LinearGradient
-      colors={["#D86F52", "#D86F52"]}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 0, y: 1 }}
+      colors={[colors.colorBackground, colors.colorBackground]}
       style={{ flex: 1, borderRadius: 15, marginBottom: '3%' }}
     >
       <TouchableOpacity
