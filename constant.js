@@ -1,6 +1,6 @@
 export const categories = ['All', 'Sain', "<30min", 'Pasta', 'Viande','Veggie', 'Fish', 'Dessert', ];
 
-export const categories_World = ['Asie','Thailande', 'Corée', "Chine", "Japon",'Am.latine','France', 'Italie','Orient', 'Africain' ];
+export const categories_World = ['Asie','Thaïlande', 'Corée', "Chine", "Japon",'Am.latine','France', 'Italie','Orient', 'Africain' ];
 
 export const categoryImages = {
   All: require('./img/menu_icon/menu_uncolor.png'),
@@ -16,7 +16,7 @@ export const categoryImages = {
   'Asie': require('./img/menu_icon/asia_uncolor.png'),
   'Orient': require('./img/menu_icon/orient_uncolor.png'),
   'Africain': require('./img/menu_icon/african_uncolor.png'),
-  Thailande: require('./img/menu_icon/thailande_uncolor.png'),
+  Thaïlande: require('./img/menu_icon/thailande_uncolor.png'),
   Corée: require('./img/menu_icon/korea_uncolor.png'),
   Japon: require('./img/menu_icon/japan_uncolor.png'),
   France: require('./img/menu_icon/french_uncolor.png'),
@@ -35,7 +35,7 @@ export const selectedCategoryImages = {
   Viande: require('./img/menu_icon/meat_color.png'),
   Dessert: require('./img/menu_icon/dessert_color.png'),
 
-  Thailande: require('./img/menu_icon/thailande_color.png'),
+  Thaïlande: require('./img/menu_icon/thailande_color.png'),
   Corée: require('./img/menu_icon/korea_color.png'),
   Chine: require('./img/menu_icon/chine_color.png'),
   Japon: require('./img/menu_icon/japan_color.png'),
@@ -49,15 +49,761 @@ export const selectedCategoryImages = {
 
 export const recipes = [
   {
+    title: "Nouilles au bœuf sauté à la thaï",
+    subtitle: "avec du piment & de la cébette",
+    description: "Envie de voyager sans pour autant passer des heures dans l’avion ? Direction la Thaïlande avec ce plat de nouilles pour lequel vous distinguerez aisément les marqueurs de cette région du monde ! Sautées avec de la cébette ainsi que de la carotte et assaisonnées de piment, de sauce soja et de citron vert, ces nouilles vous garantissent un embarquement immédiat en quelques minutes de cuisine !",
+    course: ["Asie","Viande", "Thaïlande",'Épicé',"<30min" ],
+    difficulty: "Intermédaire",
+    allergy: "Graines de sésame • Gluten • Blé • Soja",
+    preparationTime: "25 min",
+    kcal: "799",
+    ingredients: ["1 Gousse(s) d'ail", "1 Carotte(s)","½ Piment", "200g Nouilles de blé", "200g Viande hachée au bœuf", "2 Cébette(s)", "1 Citron(s)", "20ml Sauce soja","Sauce asiatique sucrée","Cacahuètes non salées","Huile de tournesol","Sel", "Poivre"],
+    image: require('./img/recipe_img/nouille_thai.png'),
+    image_round: require('./img/recipe_img/nouille_thai_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_nouille_thai.png'),
+        text: ["Portez une grande casserole d'eau salée à ébullition.",
+        "Faites-y cuire les nouilles 2-3 min.","Égouttez-les et rincez-les à l'eau froide, puis remuez-les pour éviter qu'elles ne collent entre elles. Réservez-les.",
+        "Pendant ce temps, épluchez et coupez la carotte en dés de 5 mm. Ciselez l'ail.",
+        "Ciselez séparément le blanc et le vert de la cébette.","Épépinez et émincez le piment."]
+      },
+      {
+        image: require('./img/recipe_img/2_nouille_thai.png'),
+        text: ["Faites chauffer un filet d'huile de tournesol dans un wok ou une sauteuse.","Faites-y revenir l'ail, le blanc de la cébette et la carotte 3-5 min à feu moyen-vif.",
+        "Pendant ce temps, concassez les cacahuètes.",
+        "Coupez le citron vert en quartiers.","Effeuillez et ciselez les herbes.",]
+      },
+      {
+        image: require('./img/recipe_img/3_nouille_thai.png'),
+        text: ["Ajoutez le piment et la viande hachée au wok.","Faites sauter le tout 2-3 min à feu moyen-vif et émiettez la viande hachée avec une spatule.",
+        "Ajoutez la sauce soja et la sauce asiatique sucrée.","Laissez réduire 1-2 min supplémentaires."]
+      },
+
+      {
+        image: require('./img/recipe_img/4_nouille_thai.png'),
+        text: ["Ajoutez les nouilles au wok et mélangez bien en faisant sauter le tout 1-2 min.",
+        "Servez-les dans les assiettes, garnissez de cacahuètes, d'herbes fraîches et du vert de la cébette.",
+        "Pressez le jus de ¼ de citron vert par personne par-dessus. Poivrez selon votre goût.",]
+      },
+    ]
+  },
+  {
+    title: "Wok de légumes en sauce & graines de sésame",
+    subtitle: "avec un bol de riz parfumé au gingembre",
+    description: "Issue d’une fusion entre la cuisine italienne et la cuisine indienne, la pizza naan est une tendance culinaire à tester sans plus tarder ! Nous vous proposons de réaliser aujourd’hui une version de ce plat avec du bœuf, de délicieuses courgettes poêlées et du gouda fondu sur ce pain traditionnel indien qu’est le naan. Gourmande et rapide, cette recette se décline ensuite à l’infini !",
+    course: ["Asie","Veggie", "Sain","<30min" ],
+    difficulty: "Intermédaire",
+    allergy: "Graines de sésame • Gluten • Blé • Soja",
+    preparationTime: "20 min",
+    kcal: "622",
+    ingredients: ["1 Gousse(s) d'ail", "1 Carotte(s)","½ Gingembre", "75g de Riz", "30g Poivrons grillés", "2 Portobello(s)", "1 Cébette(s)", "10ml Huile de sésame","Graines de sésame","Sauce asiatique sucrée","Huile de tournesol", "Vinaigre de vin blanc","Sel", "Poivre"],
+    image: require('./img/recipe_img/wok_veggie.png'),
+    image_round: require('./img/recipe_img/wok_veggie_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_wok_veggie.png'),
+        text: ["Portez une casserole d'eau salée à ébullition pour le riz.",
+        "Ciselez l'ail et râpez le gingembre.",
+        "Épluchez et coupez les carottes en fines demi-lunes.",
+        "Coupez les portobellos et les poivrons grillés en tranches.",
+        "Coupez la cébette en 4 tronçons et émincez la partie la plus verte."]
+      },
+      {
+        image: require('./img/recipe_img/rice.png'),
+        text: ["Faites cuire le riz 12-14 min dans la casserole, puis égouttez-le.",
+        "Mélangez-le avec la moitié de l'huile de sésame et du gingembre.","Salez, poivrez et réservez à couvert.",
+        "Pendant ce temps, dans un bol, mélangez la sauce asiatique sucrée avec le reste d'huile de sésame et 1 cs d'eau par personne.",
+        "Ajoutez la moitié des graines de sésame.",]
+      },
+
+      {
+        image: require('./img/recipe_img/3_wok_veggie.png'),
+        text: ["Faites chauffer un généreux filet d'huile de tournesol dans un wok ou une sauteuse à feu vif.",
+        "Ajoutez-y l'ail, le reste de gingembre et tous les légumes sauf la partie émincée de la cébette.",
+        "Faites-les sauter 8-10 min en remuant très régulièrement.",
+        "Ajoutez le vinaigre balsamique blanc et remuez."]
+      },
+
+      {
+        image: require('./img/recipe_img/4_wok_veggie.png'),
+        text: ["Coupez le feu sous le wok. Déglacez les légumes avec la sauce du bol et mélangez 1-2 min, ou jusqu'à ce qu'ils soient bien enrobés.",
+        "Servez le riz au gingembre dans les assiettes.",
+        "Accompagnez-le des légumes sautés. Rectifiez l'assaisonnement selon votre goût.",
+        "Saupoudrez du vert émincé de la cébette et des graines de sésame restantes.",]
+      },
+    ]
+  },
+  {
+    title: "Pizza naan au bœuf, courgette & gouda",
+    subtitle: "avec des épices italiennes & une salade",
+    description: "Issue d’une fusion entre la cuisine italienne et la cuisine indienne, la pizza naan est une tendance culinaire à tester sans plus tarder ! Nous vous proposons de réaliser aujourd’hui une version de ce plat avec du bœuf, de délicieuses courgettes poêlées et du gouda fondu sur ce pain traditionnel indien qu’est le naan. Gourmande et rapide, cette recette se décline ensuite à l’infini !",
+    course: ["Street-Food", "Pizza", "Viande", ],
+    difficulty: "Facile",
+    allergy: "Gluten • Blé • Lait",
+    preparationTime: "20 min",
+    kcal: "798",
+    ingredients: ["2 Naan(s)", "1 Courgette(s)","200g Viande hachée au bœuf", "100g Chair de tomates", "50g Gouda vieux râpé", "Épices italiennes", "60g Salade", "1cc Moutarde","1cs Vinaigre balsamique","Huile d'olive", "Sel", "Poivre"],
+    image: require('./img/recipe_img/pizza_naan_beef.png'),
+    image_round: require('./img/recipe_img/pizza_naan_beef_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_pizza_naan_beef.png'),
+        text: ["Préchauffez le four à 230°C (210°C chaleur tournante).",
+        "Coupez la courgette en dés de 5 mm."]
+      },
+      {
+        image: require('./img/recipe_img/2_pizza_naan_beef.png'),
+        text: ["Faites chauffer un filet d’huile d’olive dans une poêle à feu moyen-vif.",
+        "Faites-y revenir la courgette, le bœuf haché et ½ cc d'épices italiennes par personne 5-7 min.","La viande ne doit plus être rosée et la courgette presque cuite.",
+        "Émiettez la viande avec une spatule et remuez régulièrement.",
+        "Salez, poivrez et réservez.",]
+      },
+
+      {
+        image: require('./img/recipe_img/3_pizza_naan_beef.png'),
+        text: ["Placez les naans sur une plaque recouverte de papier sulfurisé.",
+        "Étalez la chair de tomates sur les naans en laissant un bord de 5 mm.","Placez dessus la courgette et le bœuf haché.","Saupoudrez de gouda et de ½ cc d'épices italiennes par personne.","Salez et poivrez. Ajoutez un filet d'huile d'olive.",
+        "Enfournez le tout 6-10 min dans la partie haute du four, ou jusqu’à ce que le gouda soit fondu et gratiné."]
+      },
+
+      {
+        image: require('./img/recipe_img/4_pizza_naan_beef.png'),
+        text: ["Pendant que la pizza cuit, faites une vinaigrette en mélangeant dans un saladier un peu de moutarde avec de l’huile d’olive et du vinaigre balsamique.","Salez et poivrez.",
+        "Juste avant de servir, ajoutez la salade et mélangez bien.",
+        "Coupez chaque pizza en parts et servez-les dans les assiettes.","Servez la salade à côté.",]
+      },
+    ]
+  },
+  {
+    title: "Brunch : Tarte saumon fumé & crème ciboulette",
+    subtitle: "4-6 portions",
+    description: "On ne vous présente plus la tarte au saumon fumé, emblème des recettes simples et rapides. Elle est accompagnée d'une salade, d'un yaourt et de kiwi frais, ce qui en fait un véritable repas !",
+    course: ["France", "Brunch", "Poisson", "Tarte-Salée"],
+    difficulty: "Facile",
+    allergy: "Gluten • Blé • Lait • Poisson",
+    preparationTime: "40 min",
+    kcal: "1626",
+    ingredients: ["2 Pâte à tarte", "1 Citron(s)","½ sachets Ciboulette","200g Saumon fumé", "2 Kiwi(s)", "200g Yaourt à la grecque", "200g Crème épaisse", "60g Salade", "1cc Moutarde", "1cs Vinaigre balsamique","Huile d'olive", "Sel", "Poivre"],
+    image: require('./img/recipe_img/salmon_tart.png'),
+    image_round: require('./img/recipe_img/salmon_tart_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_salmon_tart.png'),
+        text: ["Préchauffez le four à 210°C (190°C chaleur tournante).",
+        "Déroulez les pâtes, puis placez-les sur 2 plaques recouvertes de papier sulfurisé.","Piquez-les avec une fourchette.",
+        "Enfournez-les 3-5 min pour les cuire à blanc, puis réservez-les hors du four."]
+      },
+      {
+        image: require('./img/recipe_img/2_salmon_tart.png'),
+        text: ["Pendant que les pâtes cuisent à blanc, lavez bien le citron et prélevez-en le zeste avec une râpe fine, puis coupez-le en quartiers.","Ciselez la ciboulette.",
+        "Dans un bol, mélangez la crème avec la moutarde, une pincée de zestes de citron, la ciboulette, ainsi que du sel et du poivre.",
+        "Étalez ce mélange sur les pâtes, puis garnissez-les en déchirant grossièrement les morceaux de saumon par-dessus.",
+        "Enfournez les tartes 15-20 min, ou jusqu’à ce qu’elles soient bien dorées.",]
+      },
+
+      {
+        image: require('./img/recipe_img/3_salmon_tart.png'),
+        text: ["Pendant ce temps, épluchez et coupez les kiwis en petits dés.",
+        "Dans un saladier, faites une vinaigrette en mélangeant un filet d’huile d’olive et de vinaigre avec du sel et du poivre.",
+        "Ajoutez la salade au moment de servir."]
+      },
+
+      {
+        image: require('./img/recipe_img/4_salmon_tart.png'),
+        text: ["Coupez les tartes en parts et servez-les avec la salade à côté.", "Pressez quelques gouttes de jus de citron par-dessus si vous le souhaitez.",
+        "Placez le yaourt dans des bols, sucrez-le avec du miel ou du sucre et répartissez le kiwi par-dessus.",]
+      },
+    ]
+  },
+  {
+    title: "Poulet à la sauce forestière",
+    subtitle: "avec du riz & du poireau",
+    description: "Les choses les plus simples sont souvent les meilleures, et ce poulet sauce forestière accompagné de riz et de poireau ne va pas faire mentir le proverbe ! Prête en une petite demi-heure, cette recette se déguste aussi bien en solo, qu’en duo ou en famille.",
+    course: ["France", "Viande",],
+    difficulty: "Intermédiaire",
+    allergy: "Graines de sésame • Lait ",
+    preparationTime: "35 min",
+    kcal: "733",
+    ingredients: ["250g Champignon(s) de Paris", "1 Poireau(x)","150g de Riz","Gomasio", "200ml Crème liquide", "200g Blanc de poulet", "Origan séché", "Cube de bouillon de volaille", "Huile d'olive", "Sel", "Poivre"],
+    image: require('./img/recipe_img/chicken_forest.png'),
+    image_round: require('./img/recipe_img/chicken_forest_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/rice.png'),
+        text: ["Faites cuire le riz 12-14 min dans la casserole.",
+        "Égouttez-le et réservez-le sans couvercle."]
+      },
+      {
+        image: require('./img/recipe_img/1_chicken_forest.png'),
+        text: ["Portez une grande casserole d'eau salée à ébullition pour le riz.", "Émiettez ¼ de cube de bouillon par personne au-dessus.",
+        "Nettoyez les champignons avec un essuie-tout humide, puis coupez-les en quartiers.",
+        "Coupez le poireau en deux dans l'épaisseur, lavez-le bien et coupez-le en demi-lunes.",
+        "Recoupez le poulet en plus petits dés.",]
+      },
+
+      {
+        image: require('./img/recipe_img/3_chicken_forest.png'),
+        text: ["En attendant, faites chauffer un filet d'huile d'olive dans une poêle. Faites-y revenir les champignons et le poireau 4-6 min.",
+        "Salez et poivrez.","Remuez régulièrement."]
+      },
+
+      {
+        image: require('./img/recipe_img/4_chicken_forest.png'),
+        text: ["Pendant ce temps, saupoudrez les dés de poulet avec 1 cc de gomasio et 1 cc d'origan séché par personne, puis mélangez.",
+        "Faites chauffer un filet d'huile d'olive dans une autre poêle à feu moyen.",
+        "Faites-y dorer les dés de poulet 1-2 min sur toutes les faces : ils ne doivent pas être totalement cuits à ce stade.",]
+      },
+      {
+        image: require('./img/recipe_img/5_chicken_forest.png'),
+        text: ["Ajoutez les champignons, le poireau et la crème à la poêle contenant le poulet. Couvrez et laissez cuire 2-3 min.","Salez et poivrez.","Ôtez le couvercle et faites cuire 2-4 min de plus, ou jusqu'à ce que le poulet ne soit plus rosé à cœur et que la sauce réduise.",]
+      },
+      {
+        image: require('./img/recipe_img/6_chicken_forest.png'),
+        text: ["Servez le riz dans les assiettes et placez le poulet par-dessus.","Nappez le tout de sauce forestière. Saupoudrez de gomasio.",]
+      },
+    ]
+  },
+  {
+    title: "Yaki Udon « minute » au bœuf",
+    subtitle: "avec du pak choï & du sésame",
+    description: "Connaissez-vous le Yaki Udon, cette recette japonaise à base de nouilles assaisonnées avec une sauce au soja ? C’est en s’inspirant de cette délicieuse recette que nos chefs ont imaginé une version à réaliser chez vous en un quart d’heure seulement ! Alors, prêt à décoller ?",
+    course: ["<30min", "Sain", "Asie", "Japon"],
+    difficulty: "Intermédiaire",
+    allergy: "Soja • Blé • Graines de sésame • Gluten",
+    preparationTime: "15 min",
+    kcal: "639",
+    ingredients: ["200g Émincés de bœuf", "1 Gousse(s) d'ail","1 Oignon(s)","75g Sauce hoisin", "125g Champignon(s) de Paris", "400g Nouilles udon fraîches", "1 Pak choï", "20ml Sauce soja", "½ sachets Ciboulette","2cc Vinaigre balsamique", "Huile de tournesol","Sel", "Poivre"],
+    image: require('./img/recipe_img/Yaki_udon_min.png'),
+    image_round: require('./img/recipe_img/Yaki_udon_min_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_Yaki_udon_min.png'),
+        text: ["Retirez la base dure du pak choï, puis coupez-le en lanières de 2-3 cm.","Gardez quelques morceaux de la partie verte et ciselez-les très finement.",
+        "Coupez l'oignon en 5.",
+        "Épluchez, puis écrasez l'ail avec la partie plate d'un couteau ou avec le dos d'une casserole.",]
+      },
+      {
+        image: require('./img/recipe_img/3_Yaki_udon.png'),
+        text: ["Dans un grand bol d'eau tiède, ajoutez les nouilles udon et mélangez délicatement pour qu'elles se délient.",
+        "Égouttez-les."]
+      },
+      {
+        image: require('./img/recipe_img/3_Yaki_udon_min.png'),
+        text: ["Faites chauffer un filet d'huile de tournesol dans un wok ou une sauteuse à feu vif.",
+        "Faites-y revenir le bœuf et l'ail 1-2 min. Réservez-les hors du wok séparément.",
+        "Ajoutez à nouveau un filet d'huile de tournesol, puis l'oignon et le pak choï.","Faites-les revenir 2-3 min à feu vif en remuant régulièrement.",
+        "Versez la sauce hoisin, la sauce soja et le vinaigre balsamique blanc dans le wok et laissez le tout caraméliser 2-3 min."]
+      },
+
+      {
+        image: require('./img/recipe_img/4_Yaki_udon_min.png'),
+        text: ["Finissez par ajouter le bœuf et les nouilles au wok.",
+        "Remuez vigoureusement 1-2 min pour que le tout soit bien nappé de sauce.",
+        "Servez les yaki udon dans les assiettes. Saupoudrez de graines de sésame et du vert de pak choï.",]
+      },
+    ]
+  },
+
+  {
+    title: "Gyudon : bowl de bœuf à la japonaise",
+    subtitle: "avec du pak choï & des graines de sésame",
+    description: "Au Japon, le Gyudon est souvent considéré comme une source de réconfort pour les journées chargées ; une véritable étreinte culinaire qui apaise et ravit les sens. Découvrez notre Gyudon, un voyage culinaire vers les rues animées de Tokyo !",
+    course: ["<30min", "Sain", "Asie", "Japon"],
+    difficulty: "Intermédiaire",
+    allergy: "Soja • Blé • Graines de sésame • Gluten",
+    preparationTime: "30 min",
+    kcal: "594",
+    ingredients: ["200g Émincés de bœuf", "1 Oignon(s)","½ Gingembre", "150g de Riz", "1 Pak choï", "40ml Sauce soja", "10g Graines de sésame","2cc Vinaigre balsamique", "Huile de tournesol","2cc Sucre","Sel", "Poivre"],
+    image: require('./img/recipe_img/gyudon.png'),
+    image_round: require('./img/recipe_img/gyudon_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_gyudon.png'),
+        text: ["Portez une casserole d'eau salée à ébullition pour le riz.",
+        "Coupez l'oignon en fines demi-lunes de 5 mm environ.","Râpez le gingembre. Ôtez la base dure du pak choï et coupez le reste en fines lanières.",]
+      },
+      {
+        image: require('./img/recipe_img/rice.png'),
+        text: ["Faites cuire le riz 12-14 min.",
+        "Égouttez-le, ajoutez un petit filet d'huile de tournesol et une pincée de gingembre, selon votre goût.","Mélangez et réservez à couvert jusqu'au service."]
+      },
+      {
+        image: require('./img/recipe_img/3_gyudon.png'),
+        text: ["Recoupez les émincés de bœuf en plus petits morceaux si nécessaire.",
+        "Faites chauffer un filet d'huile de tournesol dans un wok ou une sauteuse à feu vif.", "Faites-y colorer le bœuf 1-3 min de tous les côtés, ou jusqu'à ce qu'il soit doré.",
+        "Retirez-les du wok ou de la sauteuse et réservez-les."]
+      },
+      {
+        image: require('./img/recipe_img/4_Bulgogi.png'),
+        text: ["Remettez le wok ou la sauteuse à feu moyen-vif avec un filet d'huile de tournesol.",
+        "Faites-y revenir l'oignon et le pak choï 3-5 min, ou jusqu'à ce qu'ils commencent à colorer légèrement.",
+        "Baissez le feu, ajoutez le reste de gingembre, puis versez 1-2 cs d'eau par personne.",
+        "Prolongez la cuisson de 4-6 min à feu moyen et à couvert, ou jusqu'à ce que les légumes soient fondants.",]
+      },
+      {
+        image: require('./img/recipe_img/5_gyudon.png'),
+        text: ["Pendant ce temps, dans un bol, mélangez la sauce soja, la moitié des graines de sésame et, par personne : 1 cc de sucre et 1 cs de vinaigre balsamique blanc (ou de riz).",
+        "Ajoutez le bœuf, puis la sauce soja-sésame aux légumes et mélangez 1 min environ, ou jusqu'à ce que le tout soit bien enrobé de sauce.",]
+      },
+      {
+        image: require('./img/recipe_img/6_gyudon.png'),
+        text: ["Servez le riz dans des assiettes creuses.", "Ajoutez le bœuf et les légumes en sauce par-dessus.",
+        "Saupoudrez du reste de graines de sésame et du vert de pak choï.",]
+      },
+    ]
+  },
+  {
+    title: "Nouilles sautées au bœuf façon Yaki Udon",
+    subtitle: "avec du pak choï & des champignons",
+    description: "Connaissez-vous les Yaki Udon, recette japonaise à base de nouilles assaisonnées avec une sauce au soja ? C’est en s’inspirant de cette délicieuse recette que nos chefs ont imaginé une version à réaliser facilement chez vous ! Alors, prêts à décoller ?",
+    course: ["<30min", "Sain", "Asie", "Japon"],
+    difficulty: "Intermédiaire",
+    allergy: "Soja • Blé • Graines de sésame • Gluten",
+    preparationTime: "30 min",
+    kcal: "626",
+    ingredients: ["200g Émincés de bœuf", "1 Gousse(s) d'ail","1 Oignon(s)","75g Sauce hoisin", "125g Champignon(s) de Paris", "400g Nouilles udon fraîches", "1 Pak choï", "20ml Sauce soja", "Ciboulette(s)","2cc Vinaigre balsamique", "Huile de tournesol","Sel", "Poivre"],
+    image: require('./img/recipe_img/Yaki_udon.png'),
+    image_round: require('./img/recipe_img/Yaki_udon_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_Yaki_udon.png'),
+        text: ["Plongez le pak choï dans l’eau glacée avant utilisation pour que les feuilles reprennent en vigueur.",
+        "Disposez les émincés de bœuf dans un bol. Ajoutez, par personne : 5 ml de sauce soja et 1 cc de sauce hoisin. Mélangez bien et réservez.",]
+      },
+      {
+        image: require('./img/recipe_img/2_Yaki_udon.png'),
+        text: ["Retirez la base dure du pak choï, puis coupez-le en lamelles de 2-3 cm.",
+        "Nettoyez les champignons avec de l'essuie-tout humide, puis coupez-les en tranches.",
+        "Coupez l'oignon en 8 quartiers.",
+        "Ciselez l'ail et la ciboulette."]
+      },
+      {
+        image: require('./img/recipe_img/3_Yaki_udon.png'),
+        text: ["Dans un grand bol d'eau tiède, ajoutez les nouilles udon et mélangez délicatement pour qu'elles se délient.",
+        "Égouttez-les."]
+      },
+      {
+        image: require('./img/recipe_img/4_Yaki_udon.png'),
+        text: ["Faites chauffer un filet d'huile de tournesol dans un wok ou une sauteuse à feu vif.",
+        "Ajoutez-y le bœuf et l'ail et faites-les revenir 1-2 min. Réservez-les hors du wok.",
+        "Ajoutez à nouveau un filet d'huile de tournesol, puis l'oignon, les champignons et le pak choï. Faites-les revenir 5-7 min à feu vif en remuant régulièrement.",
+        "Versez le reste de sauce hoisin, de sauce soja et le vinaigre dans le wok et laissez le tout caraméliser 2-3 min.",]
+      },
+      {
+        image: require('./img/recipe_img/5_Yaki_udon.png'),
+        text: ["Finissez par ajouter le bœuf et les nouilles à la sauteuse.",
+        "Remuez vigoureusement 1-2 min pour que le tout soit bien nappé de sauce et que les émincés soient cuits à cœur.",]
+      },
+      {
+        image: require('./img/recipe_img/6_Yaki_udon.png'),
+        text: ["Servez les yaki udon dans les assiettes.",
+        "Saupoudrez-les de ciboulette.",]
+      },
+    ]
+  },
+  {
+    title: "Nouilles épicées au bœuf façon Dan Dan",
+    subtitle: "avec du pak choï & du beurre de cacahuètes",
+    description: "Aujourd’hui, partez à la découverte d’un plat traditionnel de la province du Sichuan : les nouilles Dan Dan ou dàndàn miàn. Historiquement, ce plat de nouilles épicées était autrefois vendu par les colporteurs en tant que collation ou « snacks ». Pour prolonger le plaisir, c’est en tant que plat principal que nous vous proposons de découvrir ces saveurs d’ailleurs !",
+    course: ["<30min", "Asie", "Chine", "Épicé"],
+    difficulty: "Intermédiaire",
+    allergy: "Arachides • Soja • Gluten • Blé",
+    preparationTime: "30 min",
+    kcal: "1094",
+    ingredients: ["200g Nouilles de blé", "1 Gousse(s) d'ail","1 Oignon(s)","1 Gingembre(s)", "Piment(s)", "10g Cacahuètes non salées", "1 Pak choï", "Coriandre moulue", "Beurre de cacahuètes","200g Viande hachée au bœuf","20ml Sauce soja", "Huile", "1cc Vinaigre balsamique","1cc Sucre","Sel", "Poivre"],
+    image: require('./img/recipe_img/Dandan.png'),
+    image_round: require('./img/recipe_img/Dandan_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_Dandan.png'),
+        text: ["Portez une casserole d'eau généreusement salée à ébullition pour les nouilles.",
+        "Ciselez l'ail et l'oignon. Râpez le gingembre, avec la peau si vous le souhaitez et épépinez et émincez le piment.",
+        "Épépinez et émincez le piment (ça pique ! Dosez-le selon votre goût). Concassez les cacahuètes.",
+        "Retirez le pied dur du pak choï, réservez quelques feuilles vertes pour le dressage et ciselez-les finement.", "Coupez le reste du pak choï en petits morceaux.",]
+      },
+      {
+        image: require('./img/recipe_img/2_Dandan.png'),
+        text: ["Faites chauffer 1 cs d'huile de tournesol par personne dans une sauteuse à feu moyen-vif. Une fois l'huile bien chaude, faites-y revenir le piment, l'ail et la coriandre moulue 1-2 min.",
+        "Dans un bol, ajoutez 1 cs d'huile de tournesol par personne, les quantités indiquées de beurre de cacahuètes, de vinaigre balsamique, de sucre (voir CONSEIL) et la moitié de la sauce soja.","Mélangez bien.",
+        "Versez le contenu de la sauteuse dans le bol et mélangez."]
+      },
+      {
+        image: require('./img/recipe_img/3_Dandan.png'),
+        text: ["Remettez la sauteuse à feu vif avec 1 cs d'huile de tournesol par personne.", "Ajoutez-y le bœuf, le gingembre, le reste de sauce soja, l'oignon et les morceaux de pak choï.",
+        "Faites griller le tout 4-5 min en écrasant la viande avec une spatule en bois pour bien l'émietter.",
+        "Pendant ce temps, faites cuire les nouilles 3-4 min dans la casserole.","Déliez-les pendant la cuisson avec deux fourchettes, puis égouttez-les en gardant 2-3 cs d’eau de cuisson par personne."]
+      },
+      {
+        image: require('./img/recipe_img/4_Dandan.png'),
+        text: ["Ajoutez l'eau de cuisson des nouilles dans le bol contenant la sauce et mélangez pour la diluer.",
+        "Répartissez les nouilles dans des assiettes creuses ou des grands bols.",
+        "Versez la sauce par-dessus. Disposez la viande grillée et le pak choï sur les nouilles.",
+        "Saupoudrez du vert de pak choï et de cacahuètes. Mélangez bien le tout avant de déguster !",]
+      },
+    ]
+  },
+  {
+    title: "Burrito bowl tex-mex au poulet",
+    subtitle: "avec de la coriandre & des pickles d'oignon",
+    description: "Ce plat Tex-Mex est constitué de garnitures de burrito servies sans tortilla. Les garnitures sont placées dans un bol avec une couche de riz déposée au fond, d’où le nom « burrito bowl ». Votre avocat n’est pas tout à fait mûr ? Il mûrira plus vite à côté d’une banane ou d’une pomme, surtout si vous les emballez dans du papier. Si vous en avez besoin tout de suite, enveloppez-le dans de l’aluminium et faites-le chauffer 10 min dans un four préchauffé à 90°C.",
+    course: ["<30min", "Am.latine", "Viande", "Épicé"],
+    difficulty: "Facile",
+    allergy: "Lait",
+    preparationTime: "25 min",
+    kcal: "1010",
+    ingredients: ["150g de Riz", "1 Gousse(s) d'ail","1 Oignon(s)","140g Maïs en conserve", "1 Avocat(s)", "Coriandre", "2 Filet(s) de poulet", "Yaourt à la grecque", "Mélange d'épice mexicaines","Coriandre", "Huile","500ml Bouillon de volaille", "1cc Vinaigre de cidre","1cc Sucre","Sel", "Poivre"],
+    image: require('./img/recipe_img/text_mex_bowl.png'),
+    image_round: require('./img/recipe_img/text_mex_bowl_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_text_mex_bowl.png'),
+        text: ["Préparez le bouillon avec de l’eau chaude.",
+        "Coupez l’oignon en très fines demi-lunes. Placez-en la moitié dans un bol.",
+        "Dans le bol, ajoutez 2 cc de vinaigre de vin par personne et une pincée de sel et de sucre.","Mélangez et laissez reposer. Remuez de temps à autre pour que l’oignon soit bien imbibé.",]
+      },
+      {
+        image: require('./img/recipe_img/2_text_mex_bowl.png'),
+        text: ["Faites chauffer un filet d’huile d’olive dans une casserole à feu moyen-vif. Faites-y revenir le reste d'oignon 2-3 min, ou jusqu’à ce qu’il commence à dorer.",
+        "Ajoutez le riz ainsi que 1 cc d'épices mexicaines par personne et mélangez.",
+        "Une fois le riz devenu translucide (après environ 1 min), ajoutez le bouillon et laissez cuire à feu doux 10-12 min, ou jusqu’à absorption complète du liquide. Ajoutez un peu d'eau s'il n'est pas tout à fait cuit."]
+      },
+      {
+        image: require('./img/recipe_img/3_text_mex_bowl.png'),
+        text: ["Égouttez le maïs. Ciselez l’ail. Recoupez le poulet en plus petits dés.",
+        "Dans un bol, mélangez-les avec l'ail, ½ cc d'épices mexicaines par personne et un filet d'huile d'olive.", " Salez et poivrez.",
+        "Faites chauffer une poêle à feu moyen-vif et faites-y dorer le poulet et la marinade 1 min.",
+        "Ajoutez le maïs. Faites cuire 5 min de plus, puis déglacez avec 1 cs de jus de pickles d’oignon."]
+      },
+      {
+        image: require('./img/recipe_img/4_text_mex_bowl.png'),
+        text: ["Pendant ce temps, coupez l’avocat en deux. Retirez-en le noyau et ôtez la chair avec une cuillère, puis coupez-la en fines tranches. Effeuillez la coriandre.",
+        "Servez le riz dans des bols ou des assiettes creuses et garnissez avec le poulet au maïs, les tranches d’avocat, les pickles d’oignon et le yaourt.","Saupoudrez de coriandre.",]
+      },
+    ]
+  },
+  {
+    title: "Mafé revisité au poulet & carotte",
+    subtitle: "avec des cacahuètes & du riz",
+    description: "Saviez-vous que le basilic thaï, également connu sous le nom de basilic sacré, est vénéré en Thaïlande depuis des siècles ? On dit que les femmes thaïlandaises le plantaient près de leur maison pour apporter chance et protection. De plus, le basilic thaï a une saveur unique, légèrement épicée et sucrée, qui ajoute une touche d’authenticité à ce plat.",
+    course: ["<30min", "Afrique", "Viande",],
+    difficulty: "Intermédiaire",
+    allergy: "Arachides",
+    preparationTime: "25 min",
+    kcal: "726",
+    ingredients: ["150g de Riz", "1 Gousse(s) d'ail","1 Oignon(s)","1 Carotte(s)", "½ Gingembre", "Concentré de tomate", "2 Filet(s) de poulet", "Cacahuètes non salées", "Mélange d'épice africaine","Coriandre","Beurre de cacahuètes","175ml Bouillon de volaille", "Huile", "1cc Sucre","Sel", "Poivre"],
+    image: require('./img/recipe_img/mafé.png'),
+    image_round: require('./img/recipe_img/mafé_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/rice.png'),
+        text: ["Portez une casserole d’eau salée à ébullition.",
+        "Faites-y cuire le riz 12-14min.",
+        "Égouttez-le et ajoutez une pincée de gingembre.",
+        "Réservez à couvert.",]
+      },
+      {
+        image: require('./img/recipe_img/2_mafé.png'),
+        text: ["Pendant ce temps, préparez le bouillon avec de l'eau chaude.",
+        "Ciselez l'oignon.",
+        "Râpez le gingembre, si vous le souhaitez avec la peau et l'ail.",
+        "Épluchez la carotte et coupez-la en très fines demi-lunes.",
+        "Coupez le poulet en dés de 1-2 cm d'épaisseur."]
+      },
+      {
+        image: require('./img/recipe_img/3_mafé.png'),
+        text: ["Faites chauffer un filet d'huile de tournesol dans une sauteuse. Faites-y revenir l'oignon et la carotte 3-5 min à feu moyen-vif.",
+        "Ajoutez l'ail, le gingembre, le sucre, les épices africaines et le concentré de tomates. Faites cuire 1 min.",
+        "Déglacez avec le bouillon et ajoutez le beurre de cacahuètes.",
+        "Baissez le feu, ajoutez le poulet et faites mijoter 3-5 min à couvert et à feu moyen, ou jusqu'à ce qu'il ne soit plus rosé à cœur et que la carotte soit fondante.", "Salez légèrement et poivrez."]
+      },
+      {
+        image: require('./img/recipe_img/4_mafé.png'),
+        text: ["Pendant que la sauce mijote, concassez grossièrement les cacahuètes.",
+        "Effeuillez la coriandre.",
+        "Servez le riz dans des assiettes creuses et le mafé à côté ou par-dessus.",
+        "Saupoudrez de cacahuètes et de coriandre.",]
+      },
+    ]
+  },
+  {
+    title: "Bœuf sauté au basilic thaï",
+    subtitle: "avec de la courgette & un riz au gingembre",
+    description: "Saviez-vous que le basilic thaï, également connu sous le nom de basilic sacré, est vénéré en Thaïlande depuis des siècles ? On dit que les femmes thaïlandaises le plantaient près de leur maison pour apporter chance et protection. De plus, le basilic thaï a une saveur unique, légèrement épicée et sucrée, qui ajoute une touche d’authenticité à ce plat.",
+    course: ["<30min", "Sain", "Viande","Épicé", "Thai", "Asie"],
+    difficulty: "Intermédiaire",
+    allergy: "Blé • Soja • Graines de sésame",
+    preparationTime: "35 min",
+    kcal: "576",
+    ingredients: ["150g de Riz", "1 Gousse(s) d'ail","1 Oignon(s)","1 Courgette(s)", "½ Gingembre", "½ Piment(s)", "Basilic thaï", "200g Émincés de bœuf", "10g Graines de sésame", "Huile","Sauce asiatique sucrée","Sel", "Poivre"],
+    image: require('./img/recipe_img/beef_thai.png'),
+    image_round: require('./img/recipe_img/beef_thai_rond.png'),
+    steps: [
+
+      {
+        image: require('./img/recipe_img/1_beef_thai.png'),
+        text: ["Veillez à bien respecter les quantités indiquées à gauche pour préparer votre recette !",
+        "Ciselez l'oignon.",
+        "Épépinez et émincez le piment.",
+        "Ciselez l'ail. Râpez le gingembre, avec la peau si vous le souhaitez.",
+        "Coupez la courgette en très fines demi-lunes.",
+        "Effeuillez le basilic thaï et ciselez-le."]
+      },
+      {
+        image: require('./img/recipe_img/rice.png'),
+        text: ["Portez une casserole d’eau salée à ébullition.",
+        "Faites-y cuire le riz 12-14min.",
+        "Égouttez-le et ajoutez une pincée de gingembre.",
+        "Réservez à couvert.",]
+      },
+      {
+        image: require('./img/recipe_img/3_beef_thai.png'),
+        text: ["Faites chauffer un filet d'huile de tournesol dans un wok ou une sauteuse à feu vif.",
+        "Ajoutez-y l'ail, le reste de gingembre et les émincés de bœuf.","Faites-les revenir 2 min, puis réservez-les à couvert dans un bol.",
+        "Remettez le wok à feu moyen-vif, puis ajoutez-y la courgette et l'oignon. Faites-les sauter 7-9 min, ou jusqu'à ce qu'ils soient tendres.",]
+      },
+      {
+        image: require('./img/recipe_img/4_beef_thai.png'),
+        text: ["Pendant ce temps, dans un bol, mélangez la sauce asiatique sucrée, le piment et, par personne : 1 cc de vinaigre balsamique noir et 2 cs d'eau.",
+        "Ajustez l'assaisonnement selon votre goût.",]
+      },
+      {
+        image: require('./img/recipe_img/5_beef_thai.png'),
+        text: ["Coupez le feu sous le wok, puis ajoutez-y la viande et déglacez avec la sauce que vous avez préparée à l'étape 4.",
+        "Remuez le tout 1-2 min, ou jusqu'à ce que la sauce enrobe bien les légumes et la viande.", "Salez et poivrez selon votre goût."]
+      },
+      {
+        image: require('./img/recipe_img/6_beef_thai.png'),
+        text: ["Servez le riz parfumé dans les assiettes.",
+        "Ajoutez la viande et les légumes en sauce par-dessus.",
+        "Saupoudrez de graines de sésame et de basilic thaï.",]
+      },
+    ]
+  },
+  {
+    title: "Pasta primavera courgette & burrata",
+    subtitle: "avec de la crème de basilic",
+    description: "Saviez-vous que la recette de pasta primavera est en réalité américaine, ou en tout cas italo-américaine ? En effet, ce plat de pâtes en sauce associées à des légumes frais a été en réalité inventé au Canada par un chef italien, Sirio Maccioni, avant d’être popularisé dans son restaurant new-yorkais. Aujourd’hui encore, les pasta primavera sont servies dans les restaurants Outre-Atlantique, où elles ont marqué l’Histoire.",
+    course: ["<30min", "Sain", "Veggie","USA", "Italie"],
+    difficulty: "Facile",
+    allergy: "Gluten • Blé • Lait",
+    preparationTime: "20 min",
+    kcal: "616",
+    ingredients: ["180g Rigatoni", "1 Gousse(s) d'ail","1 Oignon(s)","1 Courgette(s)", "100g Épinards", "25ml Crème de basilic", "1 Burrata", "Basilic", "1 Cube de bouillon de légumes", "Huile d'olive","1cc Moutarde","1cc Vinaigre balsamique", "Sel", "Poivre"],
+    image: require('./img/recipe_img/primavera.png'),
+    image_round: require('./img/recipe_img/primavera_rond.png'),
+    steps: [
+
+      {
+        image: require('./img/recipe_img/1_primavera.png'),
+        text: ["Portez une casserole d'eau à ébullition.",
+        "Faites-y cuire les rigatoni avec ½ cube de bouillon par personne 12-14 min.",
+        "Égouttez et rincez-les à l’eau froide, puis égouttez-les de nouveau."]
+      },
+      {
+        image: require('./img/recipe_img/2_primavera.png'),
+        text: ["Pendant que les pâtes cuisent, ciselez l'oignon et l'ail.",
+        "Coupez la courgette en fines demi-lunes. Effeuillez le basilic, conservez quelques feuilles pour le dressage et ciselez le reste.",]
+      },
+      {
+        image: require('./img/recipe_img/3_primavera.png'),
+        text: ["Faites chauffer un filet d'huile d'olive dans une poêle à feu moyen-vif.",
+        "Faites-y revenir l'oignon et la courgette 4-6 min en remuant régulièrement.", "Ajoutez l'ail et les épinards et faites-les cuire 1-2 min en remuant jusqu'à ce qu'ils réduisent.", "Salez et poivrez. Réservez hors du feu.",
+        "Dans un saladier, mélangez la crème de basilic, le basilic ciselé, une pointe de moutarde, de l'huile d'olive et du vinaigre balsamique noir.", "Salez et poivrez.",
+        "Ajoutez les légumes refroidis et les rigatoni au saladier.","Mélangez.",]
+      },
+      {
+        image: require('./img/recipe_img/4_primavera.png'),
+        text: ["Servez les pasta primavera dans les assiettes.",
+        "Coupez délicatement la burrata en deux et placez-en une moitié par personne au-dessus.","Salez et poivrez-la.",
+        "Arrosez d'un filet d'huile d'olive et de quelques gouttes de vinaigre balsamique noir. Garnissez des feuilles de basilic restantes.",]
+      },
+    ]
+  },
+  {
+    title: "Burger façon croque jambon-fromage",
+    subtitle: "avec une sauce cocktail maison",
+    description: "Envie d’une recette simplissime et terriblement régressive ? Goûtez donc ce burger façon croque-monsieur, doré sur chaque face à la poêle et garni de cheddar fondant, de mayonnaise ainsi que de jambon : un régal à déguster avec des potatoes au paprika fumé !",
+    course: ["<30min", "Street-Food", "Burger"],
+    difficulty: "Facile",
+    allergy: "Gluten • Blé • Œuf • Moutarde • Lait",
+    preparationTime: "25 min",
+    kcal: "1017",
+    ingredients: ["500g Pommes de terre", "1 Tomate(s)","50g Mayonnaise","2 Pain(s) burger aux graines", "Paprika fumé en poudre", "75g Cheddar râpé", "75g Ketchup", "Beurre", "Huile d'olive", "Sel", "Poivre"],
+    image: require('./img/recipe_img/burger_croc.png'),
+    image_round: require('./img/recipe_img/burger_croc.png'),
+    steps: [
+
+      {
+        image: require('./img/recipe_img/1_burger_croc.png'),
+        text: ["Préchauffez le four à 220°C (200°C chaleur tournante).",
+        "Lavez, puis coupez les pommes de terre en potatoes de 1½ cm.","Tamponnez-les avec de l’essuie-tout pour en retirer l'humidité et qu'elles soient croustillantes.",
+        "Mélangez-les sur une plaque recouverte de papier sulfurisé avec un filet d’huile d’olive, 1½ cc de paprika fumé par personne, du sel et du poivre.",
+        "Enfournez-les 30-35 min, ou jusqu’à ce qu'elles soient bien dorées et fondantes. Remuez à mi-cuisson."]
+      },
+      {
+        image: require('./img/recipe_img/2_burger_croc.png'),
+        text: ["Lorsqu'il reste environ 10 min de cuisson aux potatoes, coupez la tomate en tranches.",
+        "Coupez les pains burger en deux dans l'épaisseur et aplatissez délicatement chaque moitié avec vos mains.",
+        "Tartinez chaque face intérieure avec la moitié de la mayonnaise.",
+        "Répartissez la moitié du cheddar sur la base des pains, puis ajoutez le jambon, la tomate et le reste de cheddar par-dessus.",
+        "Refermez les burgers.",]
+      },
+      {
+        image: require('./img/recipe_img/3_burger_croc.png'),
+        text: ["Faites chauffer le beurre et un petit filet d'huile d'olive dans une poêle à feu moyen-vif.",
+        "Faites-y dorer chaque face des burgers 3-4 min en appuyant dessus avec une spatule pour qu'ils soient bien croustillants et plats.",
+        "Pendant ce temps, mélangez le ketchup et le reste de mayonnaise dans un bol.",]
+      },
+      {
+        image: require('./img/recipe_img/4_burger_croc.png'),
+        text: ["Servez les burgers dans les assiettes.",
+        "Accompagnez-les des potatoes et de la sauce cocktail maison.",]
+      },
+    ]
+  },
+  {
+    title: "Moussaka veggie & pain à l'ail",
+    subtitle: "avec des lentilles corail & de l'aubergine",
+    description: "TLa moussaka, avec les gyros et les souvlaki, est probablement l'un des premiers plats auxquels on pense lorsque l'on évoque la cuisine grecque. Sachez pourtant que ce classique n'est pas seulement populaire en Grèce : autour de la mer Méditerranée et dans les Balkans, il existe toutes sortes de versions de ce plat. Aujourd'hui, vous réaliserez vous-même une variante de ce classique en utilisant des lentilles corail au lieu de la traditionnelle viande d'agneau.",
+    course: ["Greek", "Veggie"],
+    difficulty: "Intermédiaire",
+    allergy: "Gluten • Seigle • Blé • Lait",
+    preparationTime: "50 min",
+    kcal: "881",
+    ingredients: ["1 Aubergine(s)", "1 Courgette(s)","Origan séché", "Concentré de tomate","1 Oignon(s)","1 Gousse(s) d'ail", "25g Lentilles corail", "Tomates concassées à l'ail et à l'oignon", "Pain", "60g Fromage râpé à l'italienne", "100g Crème épaisse","Huile d'olive", "250ml Lait de coco", "Cumin", "225ml Bouillon de légumes","2cc Vinaigre balsamique","Huile de tournesol","Huile d'olive","Cassonade", "Sel", "Poivre"],
+    image: require('./img/recipe_img/Moussaka_veggie.png'),
+    image_round: require('./img/recipe_img/Moussaka_veggie_rond.png'),
+    steps: [
+
+      {
+        image: require('./img/recipe_img/1_Moussaka_veggie.png'),
+        text: ["Préchauffez le four à 200°C (180°C chaleur tournante). Préparez le bouillon avec de l'eau chaude.",
+        "Coupez l’aubergine en deux dans l'épaisseur, puis en fines demi-rondelles.",
+        "Émincez l’oignon.", "Coupez la courgette en dés de 5 mm.",
+        "Ciselez la moitié de l'ail et conservez le reste entier"]
+      },
+      {
+        image: require('./img/recipe_img/2_Moussaka_veggie.png'),
+        text: ["Faites chauffer un filet d’huile d’olive à feu moyen-vif dans une sauteuse et faites-y dorer l’oignon 3 min.",
+        "Ajoutez la courgette,","Salez et poivrez, puis poursuivez la cuisson de 5 min en remuant régulièrement.",
+        "Ajoutez ½ sachet d’origan séché par personne, le concentré de tomates et l’ail ciselé. Mélangez et faites cuire 2 min de plus.",]
+      },
+      {
+        image: require('./img/recipe_img/3_Moussaka_veggie.png'),
+        text: ["Ajoutez les lentilles corail, le vinaigre balsamique noir, les tomates concassées à l’ail et à l’oignon, le bouillon et la cassonade à la sauteuse.",
+        "Mélangez bien, portez à ébullition, puis laissez mijoter 20-25 min à feu doux.", "Mélangez régulièrement pour éviter que les lentilles n’accrochent au fond.",]
+      },
+      {
+        image: require('./img/recipe_img/4_Moussaka_veggie.png'),
+        text: ["Pendant ce temps, disposez les demi-rondelles d’aubergine sur une plaque recouverte de papier sulfurisé.", "Arrosez-les d’huile de tournesol," ,"Puis salez et poivrez. Enfournez 10-14 min.",
+        "Coupez le pain en tranches, frottez-le avec la moitié d'ail entière,", "Ajoutez un filet d'huile d'olive sur chaque tranche de pain, puis salez et poivrez.",]
+      },
+      {
+        image: require('./img/recipe_img/5_Moussaka_veggie.png'),
+        text: ["Versez le contenu de la sauteuse dans un plat à four et disposez les demi-rondelles d’aubergine cuites par-dessus, en les superposant.",
+        "Enduisez les demi-rondelles d'aubergine de crème, puis saupoudrez de fromage râpé.",
+        "Enfournez la moussaka 5-8 min. Ajoutez le pain à l’ail à côté lorsqu'il reste 2-3 min de cuisson, ou jusqu'à ce qu'il soit doré.",]
+      },
+      {
+        image: require('./img/recipe_img/6_Moussaka_veggie.png'),
+        text: ["Servez la moussaka dans les assiettes.",
+        "Présentez le pain à l’ail en accompagnement.",]
+      },
+    ]
+  },
+  {
+    title: "Moqueca de camarão ou crevettes au poivron",
+    subtitle: "avec du riz, du piment & du lait de coco",
+    description: "Typiquement brésilienne mais tirant ses origines de la cuisine indigène, portugaise et africaine, la moqueca est un ragoût de poisson associé à des légumes et du lait de coco. Elle est reconnaissable grâce à sa couleur jaune/orangée et est appréciée aux quatre coins du monde. Ici, nous avons remplacé le poisson par des crevettes, les fameuses 'camarão' !",
+    course: ["<30min", "Epicé", "Am.latine"],
+    difficulty: "Intermédiaire",
+    allergy: "Poisson",
+    preparationTime: "25 min",
+    kcal: "634",
+    ingredients: ["150g de Riz", "1 Citron(s)","1 Tomate(s)","1 Gousse(s) d'ail", "2 Filet(s) de lieu noir", "1 Oignon(s)", "1 Poivron", "Coriandre", "½ Piment", "Concentré de tomate","Huile d'olive", "250ml Lait de coco", "Cumin","45ml Bouillon de poisson", "Sel", "Poivre"],
+    image: require('./img/recipe_img/Moqueca_shrimp.png'),
+    image_round: require('./img/recipe_img/Moqueca_shrimp_rond.png'),
+    steps: [
+
+      {
+        image: require('./img/recipe_img/rice.png'),
+        text: ["Portez une grande casserole d’eau salée à ébullition.",
+        "Faites-y cuire le riz 12-14 min.","Égouttez-le et réservez-le à couvert.",
+        "Préparez le bouillon avec de l'eau chaude."]
+      },
+      {
+        image: require('./img/recipe_img/2_Moqueca_shrimp.png'),
+        text: ["Lavez bien le citron et prélevez-en le zeste avec une râpe fine, puis coupez-le en quartiers.",
+        "Coupez le lieu en gros dés. Dans un bol, mélangez-les avec le jus de ¼ de citron et les zestes.","Salez et poivrez, puis réservez au frais.",
+        "Ciselez finement l'ail et l'oignon. Coupez la tomate et le poivron en dés de 1 cm.",
+        "Effeuillez la coriandre.","Épépinez et ciselez le piment",]
+      },
+      {
+        image: require('./img/recipe_img/3_Moqueca_shrimp.png'),
+        text: ["Faites chauffer un filet d'huile d'olive à feu moyen-vif dans une sauteuse.", "Faites-y revenir l'oignon, le poivron, le piment, la tomate, l'ail et le concentré de tomates 3-4 min.", "Salez et poivrez.",
+        "Secouez le paquet de lait de coco afin que les éventuels grumeaux se décomposent.",
+        "Ajoutez-le ainsi que le cumin et le bouillon à la sauteuse.","Laissez réduire 2-4 min, ou jusqu'à ce que la sauce épaississe un peu.",
+        "À feu moyen, ajoutez le lieu et faites-le cuire 4-5 min en mélangeant délicatement.",]
+      },
+      {
+        image: require('./img/recipe_img/4_Moqueca_shrimp.png'),
+        text: ["Servez le riz dans des assiettes creuses et disposez la moqueca par-dessus.",
+        "Saupoudrez de coriandre et servez avec les quartiers de citron restants.",]
+      },
+    ]
+  },
+  {
+    title: "Moqueca brésilienne au lieu & lait de coco",
+    subtitle: "avec du poivron & du riz",
+    description: "La moqueca de poisson (« Moqueca de peixe ») est un plat traditionnel brésilien de l'état de Bahia et emblématique de l'héritage africain dans le pays. Facile à réaliser, ce plat vous fera sans aucun doute voyager !",
+    course: ["Sain", "<30min", "Epicé", "Am.latine"],
+    difficulty: "Intermédiaire",
+    allergy: "Poisson",
+    preparationTime: "25 min",
+    kcal: "635",
+    ingredients: ["150g de Riz", "1 Citron(s)","1 Tomate(s)","1 Gousse(s) d'ail", "180g Crevette(s)", "1 Oignon(s)", "1 Poivron", "Coriandre", "½ Piment", "Concentré de tomate","Huile d'olive", "250ml Lait de coco", "Cumin","45ml Bouillon de poisson", "Sel", "Poivre"],
+    image: require('./img/recipe_img/Moqueca.png'),
+    image_round: require('./img/recipe_img/Moqueca_rond.png'),
+    steps: [
+
+      {
+        image: require('./img/recipe_img/rice.png'),
+        text: ["Portez une grande casserole d’eau salée à ébullition.",
+        "Faites-y cuire le riz 12-14 min.","Égouttez-le et réservez-le à couvert.",
+        "Préparez le bouillon avec de l'eau chaude."]
+      },
+      {
+        image: require('./img/recipe_img/2_Moqueca.png'),
+        text: ["Lavez bien le citron et prélevez-en le zeste avec une râpe fine, puis coupez-le en quartiers.",
+        "Dans un bol, mélangez les crevettes avec les zestes et le jus de ¼ de citron par personne (selon votre goût). Salez et poivrez, puis réservez.",
+        "Ciselez finement l'ail et l'oignon. Coupez la tomate et le poivron en dés de 1 cm.",
+        "Effeuillez la coriandre.","Épépinez et ciselez le piment",]
+      },
+      {
+        image: require('./img/recipe_img/3_Moqueca.png'),
+        text: ["Faites chauffer un filet d'huile d'olive à feu moyen-vif dans une sauteuse.", "Faites-y revenir l'oignon, le poivron, le piment, la tomate, l'ail et le concentré de tomates 3-4 min.", "Salez et poivrez.",
+        "Secouez le paquet de lait de coco afin que les éventuels grumeaux se décomposent.",
+        "Ajoutez-le ainsi que le cumin et le bouillon à la sauteuse.","Laissez réduire 2-4 min, ou jusqu'à ce que la sauce épaississe un peu.",
+        "À feu moyen, ajoutez les crevettes et faites-le cuire 3-4 min en mélangeant délicatement.",]
+      },
+      {
+        image: require('./img/recipe_img/4_Moqueca.png'),
+        text: ["Servez le riz dans des assiettes creuses et disposez la moqueca par-dessus.",
+        "Saupoudrez de coriandre et servez avec les quartiers de citron restants.",]
+      },
+    ]
+  },
+  {
     title: "Salade de pâtes à la grecque au thon",
     subtitle: "avec des olives & du concombre",
     description: "Les salades de pâtes, c’est un essentiel pour varier des versions chaudes ! Besoin d’étoffer votre répertoire de recettes ? Tentez cette version au thon et d’inspiration grecque : olives, citron, aneth... On s’y croirait presque !",
-    course: ["Smoothie","Sain", "<30min", "Greek"],
+    course: ["Sain", "<30min", "Greek"],
     difficulty: "Simple",
     allergy: "Gluten • Blé • Lait • Poisson",
     preparationTime: "20 min",
     kcal: "634",
-    ingredients: ["180g Penne", "½ Citron","1 Concombre(s)","40g Salade", "Ciboulette", "Aneth", "50g Fromage à la grecque", "25g Olive(s)", "160g Thon", "2 Œuf(s)","Huile d'olive", "1cc Moutarde", "1cc Vinaigre balsamique", "Sel", "Poivre"],
+    ingredients: ["180g Penne", "½ Citron","1 Concombre(s)","40g Salade", "½ sachets Ciboulette", "Aneth", "50g Fromage à la grecque", "25g Olive(s)", "160g Thon", "2 Œuf(s)","Huile d'olive", "1cc Moutarde", "1cc Vinaigre balsamique", "Sel", "Poivre"],
     image: require('./img/recipe_img/greek_salad.png'),
     image_round: require('./img/recipe_img/greek_salad_rond.png'),
     steps: [
@@ -131,7 +877,7 @@ export const recipes = [
     difficulty: "Simple",
     allergy: "Œuf • Gluten • Lait (contient du lactose) • Blé",
     preparationTime: "35 min",
-    kcal: "775",
+    kcal: "1175",
     ingredients: ["4 Orange(s)", "250g Tomates cerises rouges","½ Citron","3 Pain(s) de campagne tranché", "2 Avocat(s)", "1 Gousse(s) d'ail", "Coriandre", 'Epices mexicaine', "75g Fromage à la grecque", "40g Salade", "2 Œuf(s)","Huile d'olive","1cc Vinaigre balsamique", "Sel", "Poivre"],
     image: require('./img/recipe_img/toast_brunch.png'),
     image_round: require('./img/recipe_img/toast_brunch_rond.png'),
@@ -209,12 +955,12 @@ export const recipes = [
     title: "Salade thaï aux émincés végétariens",
     subtitle: "avec des cacahuètes, du gomasio & du citron",
     description: "Envie de découvrir la cuisine thaïlandaise façon végétarienne ? Cette recette est faite pour vous ! Dans ce plat, les nouilles udon sont revenues avec des émincés végétariens marinés dans de la sauce soja, du gingembre, du citron et du gomasio pour un maximum de saveurs. Un peu de coriandre pour la fraîcheur, des cacahuètes pour le croquant et le tour est joué !",
-    course: ["Pasta", "Asie", "Thailande", "Veggie","<30min","Sain",],
+    course: ["Pasta", "Asie", "Thaïlande", "Veggie","<30min","Sain",],
     difficulty: "Simple",
     allergy: "Blé • Soja • Graines de sésame • Orge • Œuf • Arachides",
     preparationTime: "20 min",
     kcal: "521",
-    ingredients: ["1 Gousse(s) d'ail","½ Gingembre", "½ Citron", "1 Concombre(s)", "1 Oignon(s)", "2 Tomate(s)", '200g Nouilles udon fraîches', "160g Emincés végétariens", "Coriandre","Cacahuètes non salées","½ Piment", "20ml Sauce asiatique sucrée", "20ml Sauce soja","Huile","Gomasio", "1cc Sucre","Sel", "Poivre"],
+    ingredients: ["1 Gousse(s) d'ail","½ Gingembre", "½ Citron", "1 Concombre(s)", "1 Oignon(s)", "½ sachets Ciboulette","2 Tomate(s)", '200g Nouilles udon fraîches', "160g Emincés végétariens", "Coriandre","Cacahuètes non salées","½ Piment", "20ml Sauce asiatique sucrée", "20ml Sauce soja","Huile","Gomasio", "1cc Sucre","Sel", "Poivre"],
     image: require('./img/recipe_img/Vege_noodles.png'),
     image_round: require('./img/recipe_img/Vege_noodles_rond.png'),
     steps: [
@@ -254,7 +1000,7 @@ export const recipes = [
     allergy: "Blé • Gluten • Œuf",
     preparationTime: "40 min",
     kcal: "811",
-    ingredients: ["1 Gousse(s) d'ail","300g Pommes de terre", "1 Echalote(s)", "½ Courgette(s)", "200g Haricots verts", "50g Chapelure Panko", '2 Escalope(s) de dinde',"1 Œuf(s)","25ml Lait","1cc Farine", "Huile d'olive", "Epices italiennes","Sel", "Poivre"],
+    ingredients: ["1 Gousse(s) d'ail","300g Pommes de terre", "1 Echalote(s)", "½ Courgette(s)", "200g Haricots verts", "50g Chapelure Panko", '2 Escalope(s) de dinde',"1 Œuf(s)","25ml Lait","1cc Farine", "Huile d'olive", "Épices italiennes","Sel", "Poivre"],
     image: require('./img/recipe_img/green_beans_turkey.png'),
     image_round: require('./img/recipe_img/green_beans_turkey_rond.png'),
     steps: [
@@ -307,7 +1053,7 @@ export const recipes = [
     allergy: "Blé • Gluten • Lait • Œuf • Moutarde",
     preparationTime: "25 min",
     kcal: "1018",
-    ingredients: ["1 Gousse(s) d'ail","50g Tomates semi-séchées", "1 Sucrine", "½ sachets Ciboulette", "½ Citron", "180g Farfalle", '85g Tranches de poitrine fumée', "80g Yaourt à la grecque","35g Mayonnaise","1cc Moutarde", "Huile d'olive", "Epices italiennes","Sel", "Poivre"],
+    ingredients: ["1 Gousse(s) d'ail","50g Tomates semi-séchées", "1 Sucrine", "½ sachets Ciboulette", "½ Citron", "180g Farfalle", '85g Tranches de poitrine fumée', "80g Yaourt à la grecque","35g Mayonnaise","1cc Moutarde", "Huile d'olive", "Épices italiennes","Sel", "Poivre"],
     image: require('./img/recipe_img/Farfalle_pasta.png'),
     image_round: require('./img/recipe_img/Farfalle_pasta_rond.png'),
     steps: [
@@ -347,7 +1093,7 @@ export const recipes = [
     allergy: "Blé • Gluten • Lait • Anhydride sulfureux et sulfites • Noix de cajou • Fruits à coque",
     preparationTime: "20 min",
     kcal: "690",
-    ingredients: ["1 Poireau(x)","250g Champignons de Paris", "1 Gousse(s) d'ail", "180g Linguine", "75g Lardons fumés", "60g Pesto aux champignons", "100g Crème épaisse", "Huile d'olive", "Sel", "Poivre"],
+    ingredients: ["1 Poireau(x)","250g Champignon(s) de Paris", "1 Gousse(s) d'ail", "180g Linguine", "75g Lardons fumés", "60g Pesto aux champignons", "100g Crème épaisse", "Huile d'olive", "Sel", "Poivre"],
     image: require('./img/recipe_img/Linguine_leek.png'),
     image_round: require('./img/recipe_img/Linguine_leek_rond.png'),
     steps: [
@@ -421,7 +1167,7 @@ export const recipes = [
     title: "Pancakes Citron",
     subtitle: "avec cannelle & yaourt à la grecque (env. 8-12)",
     description: "Partagez ce délicieux brunch à deux ! Au menu, des pancakes ultra moelleux, recouverts d’une purée de myrtilles et accompagnés de bacon, de kiwi frais et d’un jus d’oranges pressées. Faites-vous plaisir avec cette recette sucrée-salée très rapide à préparer.",
-    course: ["Pancake"],
+    course: ["Pancake","Sain",],
     difficulty: "Simple",
     allergy: "Gluten • Blé • Lait",
     preparationTime: "60 min",
@@ -663,7 +1409,7 @@ export const recipes = [
     allergy: "Soja • Gluten • Orge • Moutarde • Œuf • Blé • Lait",
     preparationTime: "90 min",
     kcal: "1166",
-    ingredients: ["1 Oignon(s)", "2 Gousse(s) d'ail","1 Carotte(s)","100g Lardons fumés","Persil", "200g Viande hachée au bœuf", "Concentré de tomate","1 sachet d'origan séché", "1 feuille de laurier", "5 brins romarin", "15ml Sauce Worcestershire","250g Tagliatelle fraîches", "40g Pecorino râpé", "50g Mascarpone", "Sel", "Poivre", "500 ml Bouillon de boeuf", "1cc Sucre", "Huile d'olive"],
+    ingredients: ["1 Oignon(s)", "2 Gousse(s) d'ail","1 Carotte(s)","100g Lardons fumés","Persil", "200g Viande hachée au bœuf", "Concentré de tomate","1 sachet d'origan séché", "1 feuille de laurier", "5 brins romarin", "15ml Sauce Worcestershire","250g Tagliatelle fraîches", "40g Pecorino râpé", "50g Mascarpone", "Sel", "Poivre", "500 ml Bouillon de bœuf", "1cc Sucre", "Huile d'olive"],
     image: require('./img/recipe_img/bologneseDiNonna.png'),
     image_round: require('./img/recipe_img/bologneseDiNonna_Rond.png'),
     steps: [
@@ -880,7 +1626,7 @@ export const recipes = [
     title: "Salade thaï aux émincés végétariens",
     subtitle: "avec des cacahuètes, de la coriandre & du citron",
     description: "Envie de découvrir la cuisine thaïlandaise façon végétarienne ? Cette recette est faite pour vous ! Dans ce plat, les nouilles udon sont revenues avec des émincés végétariens marinés dans de la sauce soja, du gingembre et du citron pour un maximum de saveurs. Un peu de coriandre pour la fraîcheur et de cacahuètes pour le croquant et le tour est joué !",
-    course: ["Veggie", 'Asie', "Thailande", "<30min", 'Sain'],
+    course: ["Veggie", 'Asie', "Thaïlande", "<30min", 'Sain'],
     difficulty: "Facile",
     allergy: "Blé • Soja • Orge • Œuf • Arachides",
     preparationTime: "20 min",
@@ -964,12 +1710,12 @@ export const recipes = [
       title: "Dac Bulgogi : poulet à la coréenne",
       subtitle: "avec du pak choï & des graines de sésame",
       description: "Découvrez les saveurs de la Corée du Sud avec ce plat traditionnel de poulet mariné, le Dak Bulgogi. Accompagnée de riz basmati et de pak choï, cette version saura ravir vos papilles avec sa touche sucrée-salée et sa viande tendre et savoureuse.",
-      course: ["Viande", "Asie", "Corée"],
+      course: ["Sain","Viande", "Asie", "Corée"],
       difficulty: "Intermédiaire",
       allergy: "Graines de sésame • Blé • Soja • Céleri • Anhydride sulfureux • sulfites • Arachides • Fruits à coque",
       preparationTime: "30 min",
       kcal: "649",
-      ingredients: ["1 Oignon(s)","1 Gousse(s) d'ail","½ Gingembre","2 Filet de poulet", "1 Pak choï","150g de Riz","20ml Huile de sésame","Sauce asiatique sucrée", "10g Graines de sésame", "Sel", "Poivre", "Huile"],
+      ingredients: ["1 Oignon(s)","1 Gousse(s) d'ail","½ Gingembre","2 Filet(s) de poulet", "1 Pak choï","150g de Riz","20ml Huile de sésame","Sauce asiatique sucrée", "10g Graines de sésame", "Sel", "Poivre", "Huile"],
       image: require('./img/recipe_img/Bulgogi.png'),
       image_round: require('./img/recipe_img/Bulbogi_Rond.png'),
       steps: [
@@ -1011,7 +1757,7 @@ export const recipes = [
       allergy: "Lait • Gluten",
       preparationTime: "25 min",
       kcal: "768",
-      ingredients: ["1 Poireau(x)","150g de Riz", "2 Filet de poulet", "1 Gousse(s) d'ail","Persil","200ml Crème liquide", "50g Gouda vieux râpé", "Beurre", "Muscade", "Sel", "Poivre", "Huile d'olive"],
+      ingredients: ["1 Poireau(x)","150g de Riz", "2 Filet(s) de poulet", "1 Gousse(s) d'ail","Persil","200ml Crème liquide", "50g Gouda vieux râpé", "Beurre", "Muscade", "Sel", "Poivre", "Huile d'olive"],
       image: require('./img/recipe_img/ChickenCream.png'),
       image_round: require('./img/recipe_img/ChickenCream_Rond.png'),
       steps: [
