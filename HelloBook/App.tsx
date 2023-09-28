@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
   },
   sectionDescription: {
     marginTop: 8,
-    fontSize: 18,
+    fontSize: 14,
     fontWeight: '400',
   },
   highlight: {

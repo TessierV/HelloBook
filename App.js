@@ -20,8 +20,7 @@ export default function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [likedRecipes, setLikedRecipes] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [selectedCategoryWorld, setSelectedCategoryWorld] = useState('Asie'); // Catégorie pour RecipeListWorld
-
+  const [selectedCategoryWorld, setSelectedCategoryWorld] = useState('Asie');
   const filteredRecipes = recipes.filter((recipe) => {
     if (selectedCategory !== 'All' && !recipe.course.includes(selectedCategory)) {
       return false;
@@ -45,11 +44,11 @@ export default function App() {
   };
 
   const handleCategoryChange = (category) => {
-    setSelectedCategory(category); // Mettre à jour la catégorie globale
+    setSelectedCategory(category);
   };
 
   const handleCategoryChangeWorld = (category) => {
-    setSelectedCategoryWorld(category); // Mettre à jour la catégorie pour RecipeListWorld
+    setSelectedCategoryWorld(category);
   };
 
   const renderCategoryButton = (category, selectedCategory, onPress) => {
@@ -79,7 +78,6 @@ export default function App() {
         <View style={styles.container}>
           <RecipeHeader />
           <SearchBar value={searchTerm} onChangeText={(text) => setSearchTerm(text)} />
-
 
 
           <CategoryList

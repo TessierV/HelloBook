@@ -1,4 +1,4 @@
-export const categories = ['All', 'Sain', "<30min", 'Pasta', 'Viande','Veggie', 'Fish', 'Dessert', ];
+export const categories = ['All', 'Sain', "<30min", 'Pasta', 'Viande','Veggie', 'Poisson', 'Dessert', ];
 
 export const categories_World = ['Asie','Thaïlande', 'Corée', "Chine", "Japon",'Am.latine','France', 'Italie','Orient', 'Africain' ];
 
@@ -8,7 +8,7 @@ export const categoryImages = {
   '<30min' : require('./img/menu_icon/clock_uncolor.png'),
   Pasta: require('./img/menu_icon/penne_uncolor.png'),
   Veggie: require('./img/menu_icon/vegetables_uncolor.png'),
-  Fish: require('./img/menu_icon/fish_uncolor.png'),
+  Poisson: require('./img/menu_icon/fish_uncolor.png'),
   Viande: require('./img/menu_icon/meat_uncolor.png'),
   Dessert: require('./img/menu_icon/dessert_uncolor.png'),
   Chine: require('./img/menu_icon/chine_uncolor.png'),
@@ -31,7 +31,7 @@ export const selectedCategoryImages = {
 
   Pasta: require('./img/menu_icon/penne_color.png'),
   Veggie: require('./img/menu_icon/vegetables_color.png'),
-  Fish: require('./img/menu_icon/fish_color.png'),
+  Poisson: require('./img/menu_icon/fish_color.png'),
   Viande: require('./img/menu_icon/meat_color.png'),
   Dessert: require('./img/menu_icon/dessert_color.png'),
 
@@ -48,6 +48,151 @@ export const selectedCategoryImages = {
 };
 
 export const recipes = [
+  {
+    title: "Risotto al funghi & poulet",
+    subtitle: "avec du fromage frais aux herbes",
+    description: "Voici un risotto rapide et savoureux à base de champignons, poulet et fromage frais aux herbes pour un dîner de semaine efficace, qui plaira à toute la famille !",
+    course: ["Viande", "Italie"],
+    difficulty: "Intermédaire",
+    allergy: "Lait",
+    preparationTime: "50 min",
+    kcal: "685",
+    ingredients: ["1 Gousse(s) d'ail", "150g de Riz pour risotto", "Épices italiennes","200g Blanc de poulet", "1 Échalote(s)", "Persil", "250g Champignon(s) de Paris","75g Fromage frais aux herbes", "1cs Vinaigre balsamique","700ml Bouillon de légumes","Huile d'olive","Sel", "Poivre"],
+    image: require('./img/recipe_img/nouille_thai.png'),
+    image_round: require('./img/recipe_img/nouille_thai_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_nouille_thai.png'),
+        text: ["Préparez le bouillon avec de l’eau chaude.",
+        "Ciselez finement l’échalote et l’ail.",
+        "Faites chauffer un filet d'huile d'olive à feu moyen dans une casserole.", "Faites-y revenir l’échalote 1-2 min, ajoutez le riz et la moitié de l'ail. Mélangez 1 min.",
+        "Ôtez le couvercle lorsqu'il reste 5 min de cuisson.", "Salez et poivrez."]
+      },
+      {
+        image: require('./img/recipe_img/2_nouille_thai.png'),
+        text: ["Ajoutez le vinaigre balsamique blanc et ⅓ du bouillon à la casserole. Laissez les grains de riz s’en imbiber lentement. Remuez souvent.",
+        "Dès que les grains de riz ont absorbé le bouillon, ajoutez-en à nouveau ⅓, puis répétez l’opération avec le reste.",
+        "Le risotto est cuit dès que les grains sont moelleux à l’extérieur et légèrement croquants à cœur. Au total, comptez environ 20-25 min de cuisson.",
+        "Ajoutez éventuellement de l’eau pour faire cuire les grains davantage.",]
+      },
+      {
+        image: require('./img/recipe_img/4_nouille_thai.png'),
+        text: ["Pendant ce temps, nettoyez les champignons avec un essuie-tout humide, puis coupez-les en gros morceaux de 1-2 cm.",
+        "Effeuillez et ciselez le persil.",
+        "Coupez les dés de poulet en lamelles de 1-2 cm.",]
+      },
+      {
+        image: require('./img/recipe_img/3_nouille_thai.png'),
+        text: ["Faites chauffer un filet d’huile d’olive dans une poêle à feu moyen-vif.",
+        "Faites-y revenir le poulet, les champignons, le reste d'ail, ½ cc d'épices italiennes par personne et la moitié du persil 5-8 min, ou jusqu’à ce que la viande soit cuite à cœur et les champignons légèrement dorés.",
+        "Salez et poivrez."]
+      },
+      {
+        image: require('./img/recipe_img/3_nouille_thai.png'),
+        text: ["Lorsque le riz est cuit, ajoutez-y le fromage frais aux herbes et la moitié du mélange poulet-champignons.",
+        "Mélangez jusqu’à ce que le tout soit bien incorporé."]
+      },
+      {
+        image: require('./img/recipe_img/3_nouille_thai.png'),
+        text: ["Servez le risotto dans les assiettes.", "Poivrez-le selon votre goût.",
+        "Répartissez le reste de poulet et de champignons par-dessus et saupoudrez du reste de persil."]
+      },
+    ]
+  },
+  {
+    title: "Poulet & réduction fraise balsamique",
+    subtitle: "avec des pommes rissolées & du poireau",
+    description: "L'association de la fraise et du vinaigre balsamique n'est pas connue de tous, et pourtant ! Cette réduction à la saveur aigre-douce s'associe parfaitement avec ce fruit doux et sucré qu'est la fraise. Tentez l'expérience aujourd'hui avec ce poulet accompagné de délicieuses pommes de terre, d'une fondue de poireaux et de la fameuse réduction fraise-balsamique !",
+    course: ["Viande", ],
+    difficulty: "Intermédaire",
+    allergy: "Fruit rouge",
+    preparationTime: "40 min",
+    kcal: "665",
+    ingredients: ["1 Gousse(s) d'ail", "brins romarin","500g Pommes de terre", "1 Poireau(x)", "2 Filet de poulet", "1 Échalote(s)", "Confiture de fraises", "1cs Vinaigre balsamique","Beurre","Huile d'olive","Sel", "Poivre"],
+    image: require('./img/recipe_img/nouille_thai.png'),
+    image_round: require('./img/recipe_img/nouille_thai_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_nouille_thai.png'),
+        text: ["Effeuillez et hachez finement le romarin.",
+        "Épluchez ou lavez bien les pommes de terre.", "Taillez-les en fines rondelles de 5 mm.",
+        "Faites fondre une noix de beurre et un filet d'huile d'olive à feu moyen-vif dans une grande sauteuse.", "Faites-y cuire les pommes de terre et la moitié du romarin à couvert 20-35 min, ou jusqu'à ce que la pointe d'un couteau y rentre facilement.", "Remuez souvent. Baissez le feu si besoin.",
+        "Ôtez le couvercle lorsqu'il reste 5 min de cuisson.", "Salez et poivrez."]
+      },
+      {
+        image: require('./img/recipe_img/2_nouille_thai.png'),
+        text: ["Pendant ce temps, coupez le poireau en deux dans l’épaisseur, lavez-le bien, puis coupez-le en fines demi-lunes.",
+        "Ciselez l'ail.",
+        "Faites chauffer une noix de beurre dans une poêle à feu moyen-vif. Faites-y revenir le poireau et l'ail 1-2 min.",
+        "Couvrez, baissez le feu et faites cuire 8-10 min de plus, ou jusqu’à ce que le poireau soit fondant. Remuez de temps à autre.", "Salez et poivrez.",
+        "Réservez et conservez la poêle.",]
+      },
+      {
+        image: require('./img/recipe_img/4_nouille_thai.png'),
+        text: ["Coupez les filets de poulet en aiguillettes. Salez et poivrez-les.",
+        "Ciselez finement l'échalote.",]
+      },
+      {
+        image: require('./img/recipe_img/3_nouille_thai.png'),
+        text: ["Faites chauffer un filet d’huile d’olive dans la poêle utilisée pour les poireaux à feu moyen-vif.",
+        "Faites-y dorer le poulet des deux côtés 3-5 min, ou jusqu'à ce qu'il ne soit plus rosé à cœur en le retournant régulièrement.", "Réservez-le dans une assiette recouverte d'aluminium jusqu’au service.",
+        "Conservez les sucs de cuisson dans la poêle.",
+        "Goûtez et ajustez l'assaisonnement selon votre goût."]
+      },
+      {
+        image: require('./img/recipe_img/3_nouille_thai.png'),
+        text: ["Remettez la poêle sur le feu. Faites-y cuire l'échalote et le reste du romarin 3-5 min à feu moyen.",
+        "Ajoutez la confiture de fraises, le vinaigre balsamique et 2-3 cs d'eau par personne.", "Remuez bien et laissez réduire 1-2 min, ou jusqu'à obtenir une consistance légèrement sirupeuse.",
+        "Éteignez le feu. Juste avant de servir, ajoutez le beurre restant à la sauce.", "Mélangez, salez et poivrez."]
+      },
+      {
+        image: require('./img/recipe_img/3_nouille_thai.png'),
+        text: ["Servez le poulet dans les assiettes, avec les pommes de terre et la fondue de poireaux.",
+        "Nappez le tout de sauce fraise-balsamique.",
+        "Ajustez l'assaisonnement en sel et en poivre."]
+      },
+    ]
+  },
+  {
+    title: "Lap khmer : salade de bœuf cambodgienne",
+    subtitle: "avec un wok de légumes & du riz",
+    description: "Voici une recette inspirée du fameux Lap Khmer : une salade traditionnelle cambodgienne, préparée avec du bœuf mariné et des légumes crus. Au Cambodge, les saveurs acides sont particulièrement appréciées et sont généralement obtenues à partir de pâte de tamarin concentrée ou de jus de citron. La sauce poisson et le piment sont aussi quasi incontournables. Ainsi, cette recette représente une parfaite introduction aux saveurs de la cuisine khmère.",
+    course: ["Asie","Viande", "Cambodge",'Sain',"<30min" ],
+    difficulty: "Intermédaire",
+    allergy: "Graines de sésame • Poisson",
+    preparationTime: "25 min",
+    kcal: "590",
+    ingredients: ["1 Gousse(s) d'ail", "1 Citron(s)","½ Piment", "150g de Riz", "200g Viande hachée au bœuf", "1 Échalote(s)", "1 Citron(s)", "20ml Sauce poisson","1 Pak choï","Miel","Huile de sésame","Sel", "Poivre"],
+    image: require('./img/recipe_img/nouille_thai.png'),
+    image_round: require('./img/recipe_img/nouille_thai_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_nouille_thai.png'),
+        text: ["Portez une grande casserole d'eau à ébullition pour le riz.",
+        "Ciselez l’ail et l'échalote. Épépinez et émincez le piment.",
+        "Retirez les deux extrémités ainsi que les premières peaux un peu dures de la citronnelle, puis coupez-la en fines rondelles.",
+        "Coupez les émincés de bœuf en petits morceaux.", "Ajoutez-les dans un bol avec l’ail, le piment, l’échalote, la citronnelle, le miel et la sauce poisson. Poivrez. Remuez et laissez mariner."]
+      },
+      {
+        image: require('./img/recipe_img/2_nouille_thai.png'),
+        text: ["Faites cuire le riz 12-15 min à feu moyen dans la casserole.", "Égouttez-le et réservez-le.",
+        "Pendant ce temps, lavez bien le pak choï.", "Retirez-en la base dure, coupez-le en lanières et ciselez très finement un peu de vert pour le dressage.",
+        "Coupez le citron en quartiers.",]
+      },
+      {
+        image: require('./img/recipe_img/4_nouille_thai.png'),
+        text: ["Faites chauffer l’huile de tournesol dans un wok ou une grande sauteuse à feu vif.","Faites-y revenir le bœuf avec la marinade 1-2 min.",
+        "Réservez la viande dans une assiette recouverte d'aluminium.", "Remettez la sauteuse sur le feu et ajoutez-y le pak choï.",
+        "Faites-le sauter 3-4 min à feu vif avant de l'arroser avec l'huile de sésame. Laissez cuire 1 min de plus.",]
+      },
+      {
+        image: require('./img/recipe_img/3_nouille_thai.png'),
+        text: ["Servez le riz dans les assiettes et versez le pak choï par-dessus.",
+        "Ajoutez le bœuf et saupoudrez de vert ciselé du pak choï. Pressez le jus de ¼ de citron au-dessus de chaque assiette.",
+        "Goûtez et ajustez l'assaisonnement selon votre goût."]
+      },
+    ]
+  },
   {
     title: "Nouilles au bœuf sauté à la thaï",
     subtitle: "avec du piment & de la cébette",
@@ -914,7 +1059,7 @@ export const recipes = [
     title: "Bagel saumon fumé, fromage frais",
     subtitle: "2 portions avec du jus d'oranges pressées",
     description: "Envie de bruncher avec vos proches ce weekend ? Nous vous proposons une recette gourmande de brunch sucré et salé pour 2 personnes, à déguster à n’importe quel moment de la journée. Au menu : un bagel garni de fromage frais, de concombre et de saumon fumé, avec comme accompagnement une salade de fruits bien fraîche, comme on les aime !",
-    course: ["Brunch", "Fish", "Bagel",],
+    course: ["Brunch", "Poisson", "Bagel",],
     difficulty: "Simple",
     allergy: "Œuf • Gluten • Lait (contient du lactose) • Blé • Poisson",
     preparationTime: "30 min",

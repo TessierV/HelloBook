@@ -70,9 +70,9 @@ const RecipeModal = ({ isOpen, onClose, steps, image, recipeName, course, diffic
         );
     };
 
-    const maxColumns = 4;
+    const maxColumns = 1;
     const formattedIngredients = [];
-    for (let i = 0; i < ingredients.length; i += maxColumns) {
+    for (let i = 1; i < ingredients.length; i += maxColumns) {
         const ingredientsSlice = ingredients.slice(i, i + maxColumns);
         formattedIngredients.push(
             <View key={i} style={styles.ingredientRow}>
@@ -146,11 +146,9 @@ const RecipeModal = ({ isOpen, onClose, steps, image, recipeName, course, diffic
 
                             <Text style={styles.sectionTitle}>Ingredients:</Text>
                             <View style={styles.ingredientsDivider}></View>
-
-                            <View style={styles.sectionIngredient}>
+                            <View style={{justifyContent: 'center'}}>
                                 <Text style={styles.ingredientsText}>{formattedIngredients}</Text>
                             </View>
-
                             <Text style={styles.sectionTitle}>Allergènes:</Text>
                             <View style={styles.ingredientsDivider}></View>
 
@@ -198,6 +196,7 @@ const styles = StyleSheet.create({
         width: '90%',
         alignSelf: 'center',
         marginBottom: 100,
+        justifyContent: 'center',
     },
     modalHeader: {
         paddingHorizontal: 20,
@@ -238,14 +237,24 @@ const styles = StyleSheet.create({
 
     },
 
+
     ingredientRow: {
         flexDirection: 'row',
-        width: '100%',
-
-    },
-    ingredientsText: {
-        fontSize: 9,
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center',
         width: 85,
+        marginTop: 10,
+      },
+
+      ingredientItem: {
+        flex: 1,
+        width: '100%',
+      },
+
+    ingredientsText: {
+        fontSize: 7,
         marginBottom: 15,
     },
     stepText: {
@@ -285,8 +294,7 @@ const styles = StyleSheet.create({
     recipeImage: {
         height: 250,
         width: '100%',
-        borderTopLeftRadius: 10,
-        borderTopRightRadius: 10,
+        borderRadius: 10,
     },
     overlay: {
         position: 'absolute',
@@ -310,20 +318,14 @@ const styles = StyleSheet.create({
         fontSize: 16,
     },
     ingredientImage: {
-        width: 20,
-        height: 20,
+        width: 30,
+        height: 30,
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
         marginBottom: 5,
     },
-    // Styles pour le deuxième modal des étapes
-    stepsModalContainer: {
-        flex: 1,
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    },
+
     overlay: {
         position: 'absolute',
         top: 0,
