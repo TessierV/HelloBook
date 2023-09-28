@@ -6,7 +6,7 @@
 "This project is primarily an exercise and is not intended for commercial purposes. It is a personal endeavor undertaken as part of a short training session. My main goal is to acquire new skills and explore development concepts. I hope that this initiative showcases our commitment to continuous learning and our passion for creation, even when it comes to a personal project with no commercial intent. Thank you for taking the time to explore our work."
 
 ## Comming Soon: 
-More Receipe / intro picture / Landing Page / English Setting / Fix bug
+More Receipe / intro picture / Landing Page / English Setting / Fix bug / Code Optimisation
 
 ## Presentation
 "HelloCook, your ultimate culinary companion! Explore, create, and savor with our recipe app. Search step-by-step recipes, explore various categories, from global cuisines to healthy options.
