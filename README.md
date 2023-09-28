@@ -1,6 +1,6 @@
 ![hellobook](https://github.com/TessierV/HelloCook/assets/113889290/2d19fe3b-9b38-47a0-b4b7-c6fc9993de51)
 
-<h2><a href="https://filmdeur-landingpage.netlify.app/"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=38&pause=1000&color=A8DC00&center=true&vCenter=true&width=1000&height=45&lines=HELLOBOOK+-+Your+cook+Application" alt="Typing SVG" /></a></h2><br>
+<a href="https://filmdeur-landingpage.netlify.app/"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=38&pause=1000&color=A8DC00&center=true&vCenter=true&width=1000&height=45&lines=HELLOBOOK+-+Your+cook+Application" alt="Typing SVG" /></a>
 
 ## Project: 
 "This project is primarily an exercise and is not intended for commercial purposes. It is a personal endeavor undertaken as part of a short training session. My main goal is to acquire new skills and explore development concepts. I hope that this initiative showcases our commitment to continuous learning and our passion for creation, even when it comes to a personal project with no commercial intent. Thank you for taking the time to explore our work."
