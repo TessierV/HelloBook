@@ -1,4 +1,4 @@
-![hellobook](https://github.com/TessierV/HelloCook/assets/113889290/2d19fe3b-9b38-47a0-b4b7-c6fc9993de51)
+![hellobook](https://github.com/TessierV/HelloBook/assets/113889290/c3b5a0c2-efda-4ed7-96d4-468f72fea712)
 
 <a href="https://filmdeur-landingpage.netlify.app/"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=38&pause=1000&color=A8DC00&center=true&vCenter=true&width=1000&height=45&lines=HELLOBOOK+-+Your+cook+Application" alt="Typing SVG" /></a>
 
@@ -19,7 +19,7 @@ Please note that, for now, HelloCook is available in French only. So, grab your 
 ## Build
 * React
 
-![hellobook2](https://github.com/TessierV/HelloCook/assets/113889290/123a61f8-8339-47e5-87cb-04c53b71ed8e)
+![hellobook2](https://github.com/TessierV/HelloBook/assets/113889290/bdf45a31-64eb-4847-a113-afa302f235fe)
 
 ## Installation
 * download the repository: `git clone https://github.com/TessierV/filmdeur.git`  
