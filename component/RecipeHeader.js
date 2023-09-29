@@ -5,6 +5,10 @@ import { colors } from '../colors';
 const viewsData = [
   {
     imageSource: require('../img/prepare.png'),
+    text: 'sur Hello Cook',
+  },
+  {
+    imageSource: require('../img/prepare.png'),
     text: 'Préparez vos plats maison avec facilité.',
   },
   {
@@ -42,7 +46,7 @@ const RecipeHeader = () => {
               key={index}
               style={[
                 styles.homeText,
-                word === 'nouveau' || word === 'facilité.' || word === 'délicieux'
+                word === 'nouveau' || word === 'Cook' || word === 'facilité.' || word === 'délicieux'
                   ? { color: colors.primaryColors }
                   : null,
               ]}
