@@ -25,7 +25,7 @@ const AnnouncementModal = ({ isVisible, onClose }) => {
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
         <TouchableOpacity style={styles.closeButton} onPress={onClose}>
-        <Image source={require('../img/cross-small.png')} style={styles.closeIcon} />
+        <Image source={require('../img/cross-small_dark.png')} style={styles.closeIcon} />
         </TouchableOpacity>
         <Image source={require('../img/announcement.png')} style={styles.AnnouncementIcon} />
         <TouchableOpacity style={styles.linkButton} onPress={openGithub}>

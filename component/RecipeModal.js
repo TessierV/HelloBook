@@ -21,9 +21,9 @@ const RecipeModal = ({ isOpen, onClose, steps, image, recipeName, course, diffic
             case 'Sain':
                 return '#CBE895';
             case '<30min':
-                return '#B9E6F7';
+                return '#E9EBF4';
             case 'Pasta':
-                return '#EAE1B0';
+                return '#F3F2B4';
             case 'Monde':
                 return '#FFCC99';
             case 'Veggie':
@@ -31,29 +31,29 @@ const RecipeModal = ({ isOpen, onClose, steps, image, recipeName, course, diffic
             case 'Poisson':
                 return '#BFDFFF';
             case 'Viande':
-                return '#D77B89';
+                return '#E2A0AA';
             case 'Dessert':
-                return '#E1C4FF';
+                return '#F1ABE7';
             case 'Am.latine':
-                return '#BFDFFF';
+                return '#C7C19E';
             case 'Asie':
-                return '#D77B89';
+                return '#EA7A77';
             case 'Thaïlande':
-                return '#E1C4FF';
+                return '#F9DE8E';
             case 'Corée':
-                return '#BFDFFF';
+                return '#B7EED7';
             case 'Chine':
-                return '#BFDFFF';
+                return '#F8CDBE';
             case 'Japon':
-                return '#D77B89';
+                return '#D2D2FF';
             case 'France':
-                return '#E1C4FF';
+                return '#D2DEFF';
             case 'Italie':
-                return '#D77B89';
+                return '#D2F0E1';
             case 'Orient':
-                return '#E1C4FF';
+                return '#DEC5DA';
             case 'Africain':
-                return '#D77B89';
+                return '#B1ADDA';
             default:
                 return '#E9EBF4';
         }
