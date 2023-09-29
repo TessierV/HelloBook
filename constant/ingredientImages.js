@@ -155,6 +155,8 @@ export const ingredientImages = {
   "Cuisse(s) de poulet":  require('../img/recipe/chicken-leg.png'),
 
   //Fish
+  "g Miettes de saumon fumé à chaud": require('../img/recipe/saumon.png'),
+
   "g Saumon fumé": require('../img/recipe/saumon.png'),
   "g Thon": require('../img/recipe/boite-de-thon.png'),
   "g Crevette(s)": require('../img/recipe/crevette.png'),
@@ -189,6 +191,8 @@ export const ingredientImages = {
   "cc Cannelle en poudre": require('../img/recipe/brown_spice.png'),
   "Cannelle en poudre": require('../img/recipe/brown_spice.png'),
   "cc Moutarde": require('../img/recipe/mustard.png'),
+  "Moutarde": require('../img/recipe/mustard.png'),
+
   "Mélange d'épice mexicaines": require('../img/recipe/brown_spice.png'),
 
   "Epices mexicaine": require('../img/recipe/brown_spice.png'),
@@ -210,7 +214,7 @@ export const ingredientImages = {
   "g Graines de sésame": require("../img/recipe/sesame.png"),
   "Graines de sésame": require("../img/recipe/sesame.png"),
   "Graines de sésame noir": require("../img/recipe/sesame.png"),
-
+  "g Sauce ravigote": require('../img/recipe/sour-cream.png'),
   "ml Crème liquide": require('../img/recipe/sour-cream.png'),
   "g Tomme râpée": require('../img/recipe/cheese.png'),
   "g Pecorino râpé": require('../img/recipe/cheese.png'),

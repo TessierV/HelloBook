@@ -49,6 +49,46 @@ export const selectedCategoryImages = {
 
 export const recipes = [
   {
+    title: "Bowl de saumon fumé, avocat & grenailles",
+    subtitle: "avec une sauce ravigote & de la ciboulette",
+    description: "Envie d’un plat coloré, frais et surtout, rapide à préparer ? Ce bowl à base de saumon et avocat est fait pour vous ! Le petit plus ? Le saumon fourni est fumé à chaud ce qui donne à ce plat une saveur incomparable. En prime, il ne vous faudra qu’une vingtaine de minutes pour le réaliser ! Votre avocat n’est pas tout à fait mûr ? Il mûrira plus vite à côté d’une banane ou d’une pomme, surtout si vous les emballez dans du papier.",
+    course: ["Poisson","<30min"],
+    difficulty: "Intermédaire",
+    allergy: "Poisson • Moutarde • Œuf",
+    preparationTime: "20 min",
+    kcal: "761",
+    ingredients: ["400g Grenaille(s)", "Ciboulette(s)","60g Salade", "1 Avocat(s)","1 Citron(s)","40g Sauce ravigote","150g Miettes de saumon fumé à chaud", "Huile d'olive", "Moutarde","Sel", "Poivre"],
+    image: require('./img/recipe_img/bowl_salmon.png'),
+    image_round: require('./img/recipe_img/bowl_salmon_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_bowl_salmon.png'),
+        text: ["Veillez à bien respecter les quantités indiquées à gauche pour préparer votre recette !",
+        "Lavez les grenailles et coupez-les en 4, voire en 6 pour les plus grosses.",
+        "Ajoutez-les dans une casserole et versez de l’eau à hauteur. Salez, puis portez à ébullition.",
+        "Faites-les cuire à couvert 13-15 min."]
+      },
+      {
+        image: require('./img/recipe_img/2_bowl_salmon.png'),
+        text: ["Pendant ce temps, coupez l’avocat en deux, retirez-en le noyau et prélevez sa chair avec une cuillère, puis coupez-la en dés.",
+        "Ciselez la ciboulette.",
+        "Lavez bien le citron et prélevez-en le zeste avec une râpe fine, puis coupez-le en quartiers.",]
+      },
+      {
+        image: require('./img/recipe_img/3_bowl_salmon.png'),
+        text: ["Dans un saladier, faites une vinaigrette en mélangeant une pincée de zestes avec, par personne : 1½ cs d’huile d’olive, ½ cc de moutarde et le jus de ¼ de citron.", "Salez et poivrez.",
+        "Lorsque les grenailles sont cuites, rincez-les à l'eau froide et égouttez-les. Elles peuvent rester tièdes.",]
+      },
+      {
+        image: require('./img/recipe_img/4_bowl_salmon.png'),
+        text: ["Juste avant de servir, ajoutez la ciboulette au saladier.",
+        "Incorporez les grenailles, la salade, les miettes de saumon fumé et l'avocat, puis mélangez doucement pour que tous les ingrédients soient imprégnés de la vinaigrette.",
+        "Servez le tout avec les quartiers de citron restants.","Pour plus de fraîcheur, arrosez le plat de quelques gouttes de jus de citron.",
+        "Présentez la sauce ravigote à côté. "]
+      },
+    ]
+  },
+  {
     title: "Crumble aux pommes, cannelle & pécan",
     subtitle: "+/- 8 portions",
     description: "Préparée à base d'ingrédients frais, cette recette est facile à réaliser et sera parfaite en goûter ou bien pour célébrer un évènement particulier en bonne compagnie. Cette semaine, faites-vous plaisir et commandez cette recette de crumble aux pommes, cannelle et noix de pécan. Régal assuré !",
@@ -452,7 +492,7 @@ export const recipes = [
   {
     title: "Wok de légumes en sauce & graines de sésame",
     subtitle: "avec un bol de riz parfumé au gingembre",
-    description: "Issue d’une fusion entre la cuisine italienne et la cuisine indienne, la pizza naan est une tendance culinaire à tester sans plus tarder ! Nous vous proposons de réaliser aujourd’hui une version de ce plat avec du bœuf, de délicieuses courgettes poêlées et du gouda fondu sur ce pain traditionnel indien qu’est le naan. Gourmande et rapide, cette recette se décline ensuite à l’infini !",
+    description: "Journée chargée, estomacs affamés ? Nous avons la solution ! Faites le plein de légumes dans ce wok prêt en un rien de temps ! Accompagné de sa sauce asiatique sucrée et de son riz au gingembre, cette recette est aussi saine que savoureuse.",
     course: ["Asie","Veggie", "Sain","<30min" ],
     difficulty: "Intermédaire",
     allergy: "Graines de sésame • Gluten • Blé • Soja",
