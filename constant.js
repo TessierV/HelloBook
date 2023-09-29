@@ -49,6 +49,222 @@ export const selectedCategoryImages = {
 
 export const recipes = [
   {
+    title: "Crumble aux pommes, cannelle & pécan",
+    subtitle: "+/- 8 portions",
+    description: "Préparée à base d'ingrédients frais, cette recette est facile à réaliser et sera parfaite en goûter ou bien pour célébrer un évènement particulier en bonne compagnie. Cette semaine, faites-vous plaisir et commandez cette recette de crumble aux pommes, cannelle et noix de pécan. Régal assuré !",
+    course: ["Cake", "Dessert",],
+    difficulty: "Intermédaire",
+    allergy: "Fruits à coque • Noix de pécan • Blé • Lait",
+    preparationTime: "50 min",
+    kcal: "987",
+    ingredients: ["4 pomme(s)", "70g Sucre de canne","2cc Cannelle en poudre", "Noix de pécan concassées","100g Farine de blé","115g Beurre doux","Sel"],
+    image: require('./img/recipe_img/crumble_apple.png'),
+    image_round: require('./img/recipe_img/crumble_apple.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_crumble_apple.png'),
+        text: ["Préchauffez le four à 210°C (190°C chaleur tournante).",
+        "Coupez 100 g de beurre en petits morceaux, et réservez-les au frais s’ils deviennent un peu mous.",
+        "Épluchez les pommes et retirez leur cœur, puis coupez-les en dés de 1 cm."]
+      },
+      {
+        image: require('./img/recipe_img/2_crumble_apple.png'),
+        text: ["Faites chauffer 15 g de beurre dans une grande poêle à feu moyen-vif.",
+        "Ajoutez-y les pommes, ainsi que 1 cc de cannelle et 10 g de sucre de canne.",
+        "Faites-les revenir 6-7 min, ou jusqu’à ce que les pommes soient légèrement caramélisées et fondantes.",
+        "Disposez-les dans un plat à four carré ou rectangulaire qui soit de taille suffisante pour que les couches de pommes et de crumble soient généreuses.",]
+      },
+      {
+        image: require('./img/recipe_img/3_crumble_apple.png'),
+        text: ["Pendant ce temps, dans un saladier, ajoutez les noix de pécan, 100 g de farine, 60 g de sucre de canne, 1 cc de cannelle et une pincée de sel.",
+        "Ajoutez le reste de dés de beurre, puis du bout des doigts, mélangez le tout 2-3 min, ou jusqu’à obtenir une texture sableuse et friable qui s’agglomère lorsqu’on la presse.",]
+      },
+      {
+        image: require('./img/recipe_img/4_crumble_apple.png'),
+        text: ["Saupoudrez uniformément le crumble sur les pommes.",
+        "Enfournez 30-40 min, ou jusqu’à ce que le crumble soit doré et que les pommes soient tendres.",
+        "Laissez le crumble refroidir légèrement avant de le servir."]
+      },
+    ]
+  },
+  {
+    title: "Wok de légumes façon Di San Xian",
+    subtitle: "avec du riz & des cacahuètes",
+    description: "Originaire du Dongbei, dans le Nord-est de la Chine, le Di San Xian (ou littéralement « trois délices de la terre ») y est un plat très populaire. Habituellement composé de pommes de terre, aubergines et poivrons, découvrez notre version rapide accompagnée de riz, avec de l’oignon à la place de la pomme de terre. N’hésitez pas à être généreux sur la quantité d’huile ajoutée, c’est ce qui rend cette recette si bonne !",
+    course: ["Veggie", "Chine", "Asie","<30min"],
+    difficulty: "Intermédaire",
+    allergy: "Soja • Blé • Graines de sésame • Arachides",
+    preparationTime: "25 min",
+    kcal: "861",
+    ingredients: ["150g de Riz", "2 Oignon(s)","1 Gousse(s) d'ail", "1 Aubergine(s)","1 Poivron","½ Gingembre","Coriandre", "Sauce asiatique sucrée", "Sauce soja","20ml Huile de sésame","Huile de tournesol","Cacahuètes non salées","360ml Bouillon de légumes", "1cc Farine","Sel", "Poivre"],
+    image: require('./img/recipe_img/disanxian.png'),
+    image_round: require('./img/recipe_img/disanxian_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_disanxian.png'),
+        text: ["Préparez le bouillon avec de l'eau chaude.",
+        "Coupez l’aubergine en demi-rondelles de 5 mm d’épaisseur. Salez-les légèrement pour les faire dégorger.",
+        "Coupez les oignons en fines demi-lunes. Épépinez et coupez le poivron en dés de 1 cm.",
+        "Effeuillez la coriandre.",
+        "Râpez le gingembre ainsi que l'ail."]
+      },
+      {
+        image: require('./img/recipe_img/rice.png'),
+        text: ["Faites chauffer un filet d'huile de tournesol dans une casserole à feu moyen-vif. Faites-y revenir la moitié de l'ail et du gingembre 1-2 min.",
+        "Ajoutez le riz et le bouillon, portez à ébullition, puis baissez le feu. Couvrez et faites cuire 10 min.",
+        "Retirez la casserole du feu et laissez reposer à couvert jusqu'au service.",]
+      },
+      {
+        image: require('./img/recipe_img/3_disanxian.png'),
+        text: ["Faites chauffer un généreux filet d’huile de tournesol dans un wok ou une sauteuse à feu vif.",
+        "Tamponnez les demi-rondelles d’aubergine avec un essuie-tout pour en enlever l’excédent de sel et d’eau.",
+        "Une fois l’huile bien chaude, ajoutez-y l’aubergine. Faites-les sauter 1-2 min.",
+        "Ajoutez le poivron, le reste du gingembre et les oignons, puis prolongez la cuisson de 6-7 min en remuant régulièrement, ou jusqu’à ce qu’ils soient dorés et légèrement fondants.",]
+      },
+      {
+        image: require('./img/recipe_img/4_disanxian.png'),
+        text: ["Pendant ce temps, mélangez dans un bol la farine avec la sauce asiatique sucrée, la sauce soja, le reste d'ail, l'huile de sésame et un filet d'eau.",
+        "Une fois les légumes tendres, ajoutez la moitié de la sauce du bol à la sauteuse et mélangez 2-3 min jusqu'à ce qu'elle épaississe et soit nappante.",
+        "Coupez le feu, versez le reste de sauce et mélangez 1 min.",
+        "Servez le riz dans des assiettes creuses.",
+        "Répartissez les légumes et leur sauce par-dessus. Saupoudrez de cacahuètes et de coriandre."]
+      },
+    ]
+  },
+  {
+    title: "Porc grillé à la taïwanaise & pak choï",
+    subtitle: "avec du riz & un œuf mollet",
+    description: "Très réputée pour sa cuisine de rue, l’île de Taïwan regorge aussi d’une gastronomie un peu plus confidentielle, transmise et cuisinée au sein des familles de générations en générations. Voici donc un plat inspiré de l’une de ces recettes : le « Rou Zao Fan », un plat traditionnel taïwanais à base de porc, œuf, riz et légumes.",
+    course: ["Viande", "Taïwan", "Sain", "Asie","<30min"],
+    difficulty: "Intermédaire",
+    allergy: "œuf • Blé • Soja",
+    preparationTime: "34 min",
+    kcal: "798",
+    ingredients: ["150g de Riz", "1 Oignon(s)", "1 Pak choï","½ Gingembre","250g Champignon(s) de Paris", "200g Chair à saucisse","Fenouil moulu", "Sauce asiatique sucrée", "2 Œuf(s)", "1cc Vinaigre balsamique","Huile de tournesol","Sel", "Poivre"],
+    image: require('./img/recipe_img/pork_taiwan.png'),
+    image_round: require('./img/recipe_img/pork_taiwan_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/rice.png'),
+        text: ["Portez une casserole d’eau salée à ébullition. Faites-y cuire le riz 12-14 min.",
+        "Rincez les œufs. Lorsqu'il reste 7 min de cuisson au riz, ajoutez-les délicatement à la casserole.",
+        "Égouttez le tout. Passez les œufs sous l'eau très froide et réservez le riz à couvert."]
+      },
+      {
+        image: require('./img/recipe_img/2_pork_taiwan.png'),
+        text: ["Nettoyez les champignons avec un essuie-tout humide, puis coupez-les en tranches.",
+        "Ciselez finement l'oignon.",
+        "Râpez finement le gingembre.",
+        "Ôtez la base dure du pak choï, émincez finement une partie du vert, puis coupez grossièrement le reste en lamelles de 1-1,5 cm.",]
+      },
+      {
+        image: require('./img/recipe_img/3_pork_taiwan.png'),
+        text: ["Faites chauffer un wok ou une sauteuse à sec à feu vif.",
+        "Faites-y revenir la chair à saucisse 4-5 min, ou jusqu'à ce qu'elle soit bien dorée. Réservez-la hors du wok.",]
+      },
+      {
+        image: require('./img/recipe_img/4_pork_taiwan.png'),
+        text: ["Remettez le wok à feu vif et ajoutez-y un filet d'huile de tournesol, le gingembre, le pak choï, les champignons et l'oignon.",
+        "Faites sauter le tout 5-6 min. Remuez régulièrement.",
+        "Ajoutez la quantité indiquée de fenouil moulu, la sauce asiatique sucrée, le vinaigre balsamique blanc, la chair à saucisse et environ 100 ml d'eau par personne."]
+      },
+      {
+        image: require('./img/recipe_img/5_pork_taiwan.png'),
+        text: ["Pendant ce temps, écalez délicatement les œufs froids en les gardant entiers.",
+        "Coupez les œufs en deux."]
+      },
+      {
+        image: require('./img/recipe_img/6_pork_taiwan.png'),
+        text: ["Servez le riz dans les assiettes.",
+        "Ajoutez la viande et les légumes en sauce par-dessus, ainsi que les œufs.",
+        "Saupoudrez du vert du pak choï."]
+      },
+    ]
+  },
+  {
+    title: "Brocoli & poulet à la chinoise",
+    subtitle: "avec du riz au sésame noir",
+    description: "Découvrez une délicieuse recette issue de cuisine asiatique : le brocoli et poulet à la chinoise accompagnés de riz au sésame noir. Savoureux et rapide à préparer, c’est le plat idéal pour un dîner en semaine ou pour faire voyager vos invités. Essayez-le maintenant et régalez-vous !",
+    course: ["Viande", "Chinois", "Sain", "Asie","<30min"],
+    difficulty: "Intermédaire",
+    allergy: "Graines de sésame • Blé • Soja • Gluten",
+    preparationTime: "25 min",
+    kcal: "652",
+    ingredients: ["150g de Riz", "1 Oignon(s)", "1 Gousse(s) d'ail","½ Gingembre","200g Brocoli(s)", "200g Blanc de poulet", "Graines de sésame noir", "20ml Huile de sésame", "50g Sauce hoisin","1cs Sucre","Farine","Sel", "Poivre"],
+    image: require('./img/recipe_img/brocoli_salmon.png'),
+    image_round: require('./img/recipe_img/brocoli_salmon_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_brocoli_salmon.png'),
+        text: ["Portez une casserole d'eau salée à ébullition.",
+        "Ciselez l'ail et l'oignon. Râpez le gingembre.",
+        "Coupez le brocoli en fleurettes et les tiges en morceaux.",
+        "Coupez les dés de poulet en fines lanières."]
+      },
+      {
+        image: require('./img/recipe_img/rice.png'),
+        text: ["Faites cuire le riz 12-14 min dans la casserole d'eau bouillante.",
+        "Une fois cuit, égouttez-le et mélangez-le avec la moitié du gingembre, des graines et de l'huile de sésame.",
+        "Réservez à couvert.",]
+      },
+      {
+        image: require('./img/recipe_img/3_brocoli_salmon.png'),
+        text: ["Pendant ce temps, faites chauffer un filet d'huile de tournesol à feu vif dans un wok.",
+        "Faites-y revenir le poulet, l'oignon, le reste de gingembre et l'ail 3-4 min en remuant activement.",
+        "Réservez hors du wok, puis ajoutez le brocoli avec un filet d'eau. Couvrez et faites étuver le brocoli 6-8 min à feu moyen-vif. Ajoutez un filet d'eau à mi-cuisson si besoin.",
+        "Pendant ce temps, mélangez la farine, la sauce hoisin, le sucre, le reste d'huile de sésame et 3 cs d'eau par personne dans un bol.",]
+      },
+      {
+        image: require('./img/recipe_img/4_brocoli_salmon.png'),
+        text: ["Ajoutez à nouveau le poulet dans le wok, ainsi que la sauce du bol.",
+        "Salez, poivrez et faites revenir 1 min, ou jusqu'à ce que la sauce ait légèrement épaissi et enrobe bien le poulet et le brocoli.",
+        "Servez le riz dans les assiettes. Placez le contenu du wok à côté.",
+        "Saupoudrez du reste de graines de sésame."]
+      },
+    ]
+  },
+  {
+    title: "Saucisse de Toulouse & purée à la tomme",
+    subtitle: "avec des oignons confits & des champignons",
+    description: "La traditionnelle saucisse-purée, un grand classique des cantines et des bistrots... Elle est ici revisitée grâce à de la tomme et du thym séché qui lui redonnent une nouvelle jeunesse ! Dégustez-la avec des champignons de Paris pour toujours plus de saveurs",
+    course: ["Viande", "France", "<30min"],
+    difficulty: "Intermédaire",
+    allergy: "Lait",
+    preparationTime: "30 min",
+    kcal: "765",
+    ingredients: ["400g Grenaille(s) rouges", "1 Oignon(s)", "Thym séché","250g Champignon(s) de Paris", "2 Saucisse(s) de Toulouse", "75g Tomme râpée", "2cc Beurre", "Lait","Sel", "Poivre"],
+    image: require('./img/recipe_img/sausage_potato.png'),
+    image_round: require('./img/recipe_img/sausage_potato_rond.png'),
+    steps: [
+      {
+        image: require('./img/recipe_img/1_sausage_potato.png'),
+        text: ["Portez une casserole d’eau salée à ébullition.",
+        "Épluchez, puis coupez les pommes de terre en morceaux de taille égale. Faites-les cuire dans la casserole 12-15 min.",
+        "Réservez un peu d’eau de cuisson (environ ¼ de louche pour 2 personnes), puis égouttez-les et réservez-les."]
+      },
+      {
+        image: require('./img/recipe_img/2_sausage_potato.png'),
+        text: ["Ciselez l'oignon. Nettoyez les champignons avec un essuie-tout humide, puis coupez-les en tranches.",
+        "Piquez les saucisses avec une fourchette.",
+        "Faites chauffer une poêle à sec et à feu moyen-vif. Faites-y revenir les saucisses 5-6 min à couvert en remuant régulièrement.",
+        "Ajoutez les champignons et l'oignon, salez, poivrez et laissez cuire 6-8 min de plus à couvert. Ajoutez un petit filet d'eau si le fond accroche.",]
+      },
+      {
+        image: require('./img/recipe_img/3_sausage_potato.png'),
+        text: ["Écrasez les pommes de terre avec un presse-purée.",
+        "Ajoutez ½ cs de beurre par personne ainsi qu'un filet de lait et un peu d’eau de cuisson pour l'onctuosité.",
+        "Ajoutez ensuite la tomme râpée et 1 cc de thym séché par personne. Salez, poivrez et mélangez jusqu’à ce que la tomme soit bien incorporée.",]
+      },
+      {
+        image: require('./img/recipe_img/4_sausage_potato.png'),
+        text: ["Servez la purée dans les assiettes avec la saucisse, l'oignon et les champignons.",
+        "Ajoutez ½ cs de beurre par personne à la poêle et faites-le fondre jusqu'à ce qu'il devienne légèrement brun et dégage une odeur de noisette.",
+        "Formez un puit dans la purée et versez-y le beurre fondu.",
+        "Ajustez l'assaisonnement en sel et en poivre."]
+      },
+    ]
+  },
+  {
     title: "Risotto al funghi & poulet",
     subtitle: "avec du fromage frais aux herbes",
     description: "Voici un risotto rapide et savoureux à base de champignons, poulet et fromage frais aux herbes pour un dîner de semaine efficace, qui plaira à toute la famille !",
@@ -58,42 +274,42 @@ export const recipes = [
     preparationTime: "50 min",
     kcal: "685",
     ingredients: ["1 Gousse(s) d'ail", "150g de Riz pour risotto", "Épices italiennes","200g Blanc de poulet", "1 Échalote(s)", "Persil", "250g Champignon(s) de Paris","75g Fromage frais aux herbes", "1cs Vinaigre balsamique","700ml Bouillon de légumes","Huile d'olive","Sel", "Poivre"],
-    image: require('./img/recipe_img/nouille_thai.png'),
-    image_round: require('./img/recipe_img/nouille_thai_rond.png'),
+    image: require('./img/recipe_img/risotto_funghi.png'),
+    image_round: require('./img/recipe_img/risotto_funghi_rond.png'),
     steps: [
       {
-        image: require('./img/recipe_img/1_nouille_thai.png'),
+        image: require('./img/recipe_img/1_risotto_funghi.png'),
         text: ["Préparez le bouillon avec de l’eau chaude.",
         "Ciselez finement l’échalote et l’ail.",
         "Faites chauffer un filet d'huile d'olive à feu moyen dans une casserole.", "Faites-y revenir l’échalote 1-2 min, ajoutez le riz et la moitié de l'ail. Mélangez 1 min.",
         "Ôtez le couvercle lorsqu'il reste 5 min de cuisson.", "Salez et poivrez."]
       },
       {
-        image: require('./img/recipe_img/2_nouille_thai.png'),
+        image: require('./img/recipe_img/rice.png'),
         text: ["Ajoutez le vinaigre balsamique blanc et ⅓ du bouillon à la casserole. Laissez les grains de riz s’en imbiber lentement. Remuez souvent.",
         "Dès que les grains de riz ont absorbé le bouillon, ajoutez-en à nouveau ⅓, puis répétez l’opération avec le reste.",
         "Le risotto est cuit dès que les grains sont moelleux à l’extérieur et légèrement croquants à cœur. Au total, comptez environ 20-25 min de cuisson.",
         "Ajoutez éventuellement de l’eau pour faire cuire les grains davantage.",]
       },
       {
-        image: require('./img/recipe_img/4_nouille_thai.png'),
+        image: require('./img/recipe_img/3_risotto_funghi.png'),
         text: ["Pendant ce temps, nettoyez les champignons avec un essuie-tout humide, puis coupez-les en gros morceaux de 1-2 cm.",
         "Effeuillez et ciselez le persil.",
         "Coupez les dés de poulet en lamelles de 1-2 cm.",]
       },
       {
-        image: require('./img/recipe_img/3_nouille_thai.png'),
+        image: require('./img/recipe_img/4_risotto_funghi.png'),
         text: ["Faites chauffer un filet d’huile d’olive dans une poêle à feu moyen-vif.",
         "Faites-y revenir le poulet, les champignons, le reste d'ail, ½ cc d'épices italiennes par personne et la moitié du persil 5-8 min, ou jusqu’à ce que la viande soit cuite à cœur et les champignons légèrement dorés.",
         "Salez et poivrez."]
       },
       {
-        image: require('./img/recipe_img/3_nouille_thai.png'),
+        image: require('./img/recipe_img/5_risotto_funghi.png'),
         text: ["Lorsque le riz est cuit, ajoutez-y le fromage frais aux herbes et la moitié du mélange poulet-champignons.",
         "Mélangez jusqu’à ce que le tout soit bien incorporé."]
       },
       {
-        image: require('./img/recipe_img/3_nouille_thai.png'),
+        image: require('./img/recipe_img/6_risotto_funghi.png'),
         text: ["Servez le risotto dans les assiettes.", "Poivrez-le selon votre goût.",
         "Répartissez le reste de poulet et de champignons par-dessus et saupoudrez du reste de persil."]
       },
@@ -109,18 +325,18 @@ export const recipes = [
     preparationTime: "40 min",
     kcal: "665",
     ingredients: ["1 Gousse(s) d'ail", "brins romarin","500g Pommes de terre", "1 Poireau(x)", "2 Filet de poulet", "1 Échalote(s)", "Confiture de fraises", "1cs Vinaigre balsamique","Beurre","Huile d'olive","Sel", "Poivre"],
-    image: require('./img/recipe_img/nouille_thai.png'),
-    image_round: require('./img/recipe_img/nouille_thai_rond.png'),
+    image: require('./img/recipe_img/chicken_ham.png'),
+    image_round: require('./img/recipe_img/chicken_ham_rond.png'),
     steps: [
       {
-        image: require('./img/recipe_img/1_nouille_thai.png'),
+        image: require('./img/recipe_img/1_chicken_ham.png'),
         text: ["Effeuillez et hachez finement le romarin.",
         "Épluchez ou lavez bien les pommes de terre.", "Taillez-les en fines rondelles de 5 mm.",
         "Faites fondre une noix de beurre et un filet d'huile d'olive à feu moyen-vif dans une grande sauteuse.", "Faites-y cuire les pommes de terre et la moitié du romarin à couvert 20-35 min, ou jusqu'à ce que la pointe d'un couteau y rentre facilement.", "Remuez souvent. Baissez le feu si besoin.",
         "Ôtez le couvercle lorsqu'il reste 5 min de cuisson.", "Salez et poivrez."]
       },
       {
-        image: require('./img/recipe_img/2_nouille_thai.png'),
+        image: require('./img/recipe_img/2_chicken_ham.png'),
         text: ["Pendant ce temps, coupez le poireau en deux dans l’épaisseur, lavez-le bien, puis coupez-le en fines demi-lunes.",
         "Ciselez l'ail.",
         "Faites chauffer une noix de beurre dans une poêle à feu moyen-vif. Faites-y revenir le poireau et l'ail 1-2 min.",
@@ -128,25 +344,25 @@ export const recipes = [
         "Réservez et conservez la poêle.",]
       },
       {
-        image: require('./img/recipe_img/4_nouille_thai.png'),
+        image: require('./img/recipe_img/3_chicken_ham.png'),
         text: ["Coupez les filets de poulet en aiguillettes. Salez et poivrez-les.",
         "Ciselez finement l'échalote.",]
       },
       {
-        image: require('./img/recipe_img/3_nouille_thai.png'),
+        image: require('./img/recipe_img/4_chicken_ham.png'),
         text: ["Faites chauffer un filet d’huile d’olive dans la poêle utilisée pour les poireaux à feu moyen-vif.",
         "Faites-y dorer le poulet des deux côtés 3-5 min, ou jusqu'à ce qu'il ne soit plus rosé à cœur en le retournant régulièrement.", "Réservez-le dans une assiette recouverte d'aluminium jusqu’au service.",
         "Conservez les sucs de cuisson dans la poêle.",
         "Goûtez et ajustez l'assaisonnement selon votre goût."]
       },
       {
-        image: require('./img/recipe_img/3_nouille_thai.png'),
+        image: require('./img/recipe_img/5_chicken_ham.png'),
         text: ["Remettez la poêle sur le feu. Faites-y cuire l'échalote et le reste du romarin 3-5 min à feu moyen.",
         "Ajoutez la confiture de fraises, le vinaigre balsamique et 2-3 cs d'eau par personne.", "Remuez bien et laissez réduire 1-2 min, ou jusqu'à obtenir une consistance légèrement sirupeuse.",
         "Éteignez le feu. Juste avant de servir, ajoutez le beurre restant à la sauce.", "Mélangez, salez et poivrez."]
       },
       {
-        image: require('./img/recipe_img/3_nouille_thai.png'),
+        image: require('./img/recipe_img/6_chicken_ham.png'),
         text: ["Servez le poulet dans les assiettes, avec les pommes de terre et la fondue de poireaux.",
         "Nappez le tout de sauce fraise-balsamique.",
         "Ajustez l'assaisonnement en sel et en poivre."]
@@ -163,30 +379,30 @@ export const recipes = [
     preparationTime: "25 min",
     kcal: "590",
     ingredients: ["1 Gousse(s) d'ail", "1 Citron(s)","½ Piment", "150g de Riz", "200g Viande hachée au bœuf", "1 Échalote(s)", "1 Citron(s)", "20ml Sauce poisson","1 Pak choï","Miel","Huile de sésame","Sel", "Poivre"],
-    image: require('./img/recipe_img/nouille_thai.png'),
-    image_round: require('./img/recipe_img/nouille_thai_rond.png'),
+    image: require('./img/recipe_img/lapkhmer.png'),
+    image_round: require('./img/recipe_img/lapkhmer_rond.png'),
     steps: [
       {
-        image: require('./img/recipe_img/1_nouille_thai.png'),
+        image: require('./img/recipe_img/1_lapkhmer.png'),
         text: ["Portez une grande casserole d'eau à ébullition pour le riz.",
         "Ciselez l’ail et l'échalote. Épépinez et émincez le piment.",
         "Retirez les deux extrémités ainsi que les premières peaux un peu dures de la citronnelle, puis coupez-la en fines rondelles.",
         "Coupez les émincés de bœuf en petits morceaux.", "Ajoutez-les dans un bol avec l’ail, le piment, l’échalote, la citronnelle, le miel et la sauce poisson. Poivrez. Remuez et laissez mariner."]
       },
       {
-        image: require('./img/recipe_img/2_nouille_thai.png'),
+        image: require('./img/recipe_img/rice.png'),
         text: ["Faites cuire le riz 12-15 min à feu moyen dans la casserole.", "Égouttez-le et réservez-le.",
         "Pendant ce temps, lavez bien le pak choï.", "Retirez-en la base dure, coupez-le en lanières et ciselez très finement un peu de vert pour le dressage.",
         "Coupez le citron en quartiers.",]
       },
       {
-        image: require('./img/recipe_img/4_nouille_thai.png'),
+        image: require('./img/recipe_img/3_lapkhmer.png'),
         text: ["Faites chauffer l’huile de tournesol dans un wok ou une grande sauteuse à feu vif.","Faites-y revenir le bœuf avec la marinade 1-2 min.",
         "Réservez la viande dans une assiette recouverte d'aluminium.", "Remettez la sauteuse sur le feu et ajoutez-y le pak choï.",
         "Faites-le sauter 3-4 min à feu vif avant de l'arroser avec l'huile de sésame. Laissez cuire 1 min de plus.",]
       },
       {
-        image: require('./img/recipe_img/3_nouille_thai.png'),
+        image: require('./img/recipe_img/lapkhmer.png'),
         text: ["Servez le riz dans les assiettes et versez le pak choï par-dessus.",
         "Ajoutez le bœuf et saupoudrez de vert ciselé du pak choï. Pressez le jus de ¼ de citron au-dessus de chaque assiette.",
         "Goûtez et ajustez l'assaisonnement selon votre goût."]

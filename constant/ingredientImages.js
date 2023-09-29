@@ -40,6 +40,7 @@ export const ingredientImages = {
   "Concombre(s)": require('../img/recipe/cucumber.png'),
   "Courgette(s)": require('../img/recipe/zucchini.png'),
   "½ Piment(s)": require('../img/recipe/chili.png'),
+  "g Brocoli(s)": require('../img/recipe/brocoli.png'),
 
   "½ Courgette(s)": require('../img/recipe/zucchini.png'),
 
@@ -97,6 +98,9 @@ export const ingredientImages = {
 
   "g Lentilles corail": require('../img/recipe/flour.png'),
   "Cassonade": require('../img/recipe/flour.png'),
+  "Farine": require('../img/recipe/flour.png'),
+  "g Farine de blé": require('../img/recipe/flour.png'),
+
   "cc Farine": require('../img/recipe/flour.png'),
   "cc Sucre": require('../img/recipe/rice.png'),
   "cs Sucre": require('../img/recipe/rice.png'),
@@ -113,6 +117,7 @@ export const ingredientImages = {
   "cs Lait": require('../img/recipe/milk-bottle.png'),
   "ml Lait": require('../img/recipe/milk-bottle.png'),
   "ml Lait de coco": require('../img/recipe/milk-bottle.png'),
+  "Lait": require('../img/recipe/milk-bottle.png'),
 
   "ml Eau": require('../img/recipe/leau.png'),
 
@@ -192,14 +197,19 @@ export const ingredientImages = {
   "Beurre de cacahuètes": require('../img/recipe/Pesto.png'),
 
   "Origan séché": require('../img/recipe/green_spice.png'),
+  "Thym séché": require('../img/recipe/thym.png'),
 
+  "Saucisse(s) de Toulouse": require('../img/recipe/sausage.png'),
+  "g Chair à saucisse": require('../img/recipe/sausage.png'),
 
   "Saucisse de Toulouse": require('../img/recipe/sausage.png'),
   "Fenouil": require('../img/recipe/leek.png'),
+
   "g de Riz pour risotto": require('../img/recipe/rice-bowl.png'),
   "g de Riz": require('../img/recipe/rice-bowl.png'),
   "g Graines de sésame": require("../img/recipe/sesame.png"),
   "Graines de sésame": require("../img/recipe/sesame.png"),
+  "Graines de sésame noir": require("../img/recipe/sesame.png"),
 
   "ml Crème liquide": require('../img/recipe/sour-cream.png'),
   "g Tomme râpée": require('../img/recipe/cheese.png'),
