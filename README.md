@@ -43,8 +43,5 @@ Please note that, for now, HelloCook is available in French only. So, grab your 
 ## Authors
 <h3>Vanessa TESSIER</h3>
 <hr>
-<p align="right">Holberton School - TOULOUSE C19 Cohort JUNE. 2023
-</p>
-
 
 
